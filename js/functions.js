@@ -2,10 +2,11 @@
 //initialize variables
 var svgWidth = 1000;
 var svgHeight= 800;
-var svgContainer = d3.select("body") //create container
-                     .append("svg")
+var svgContainer = d3.select("svg") //create container
+                     // .append("svg")
                      .attr("width", svgWidth )
-                     .attr("height",svgHeight);
+                     .attr("height",svgHeight)
+                     .attr("id", "svgContainer");
 
 var friends = [];
 
