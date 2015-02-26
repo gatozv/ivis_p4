@@ -7,7 +7,7 @@ var svgContainer = d3.select("svg") //create container
                      .attr("width", svgWidth )
                      .attr("height",svgHeight)
                      .attr("id", "svgContainer");
-
+//create the blurry lines
 var radialGradient = svgContainer.append("defs").append("radialGradient")
                           .attr("id","grad1")
                           .attr("cx","50%")
@@ -23,34 +23,24 @@ radialGradient.append("stop")
               .style("stop-color","#F2F1EF")
               .style("stop-opacity",0)
 
-
-
 var friends = [];
 
 //random friends generator
-
 for (var i = 0; i <85 ; i++) {
   
   var friend = {};
-
   friend["id"] = i;
-
   friend["totalBooks"] = Math.round(Math.random() * 600) ;
   friend["commonBooks"] = Math.round(Math.random() * 100);
-
-
   friends.push(friend);
 };
 
 //gets the maximum of any of the fields in friends
 function maxOfFriendsList(friendsList, attr){
-
   var max = 0;
-
   for (var i = friendsList.length - 1; i >= 0; i--) {
      max = friendsList[i][attr] > max ? friendsList[i][attr] :  max;
   };
-
   return max;
 }
 
@@ -63,10 +53,10 @@ var xOrigin = window.outerWidth/2;
 var yOrigin = window.outerHeight/2;
 
 var distanceFromMeMax = 500;
-//plots the data
+//creates a scale for the number of books
 var scale = d3.scale.linear().domain([0,600]).range([1,10]);
 
-
+//plots the data
 svgContainer.selectAll("circle")
             .data(friends)
             .enter()
@@ -77,6 +67,7 @@ svgContainer.selectAll("circle")
             .style("opacity","0")
             .attr("class", "friend")
             .attr("fill", "url(#grad1)");
+//show the circles one at a time 
 var circles = svgContainer.selectAll("circle");
 circles[0] = d3.shuffle(circles[0]);
       circles.transition()
