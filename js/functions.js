@@ -1,24 +1,24 @@
 
 //initialize variables
 var svgWidth = 1000;
-var svgHeight= 1000;
+var svgHeight= 800;
 var svgContainer = d3.select("body") //create container
                      .append("svg")
                      .attr("width", svgWidth )
-                     .attr("height",svgHeight)
+                     .attr("height",svgHeight);
 
 var friends = [];
 
 //random friends generator
 
-for (var i = 0; i <556 ; i++) {
+for (var i = 0; i <85 ; i++) {
   
-  var friend = {}
+  var friend = {};
 
-  friend["id"] = i
+  friend["id"] = i;
 
   friend["friendsInCommon"] = Math.round(Math.random() * 100) ;
-  friend["commonLikes"] = Math.round(Math.random() * 100);
+  friend["commonBooks"] = Math.round(Math.random() * 100);
 
   friends.push(friend);
 };
@@ -26,66 +26,57 @@ for (var i = 0; i <556 ; i++) {
 //gets the maximum of any of the fields in friends
 function maxOfFriendsList(friendsList, attr){
 
-  var max = 0
+  var max = 0;
 
   for (var i = friendsList.length - 1; i >= 0; i--) {
-     max = friendsList[i][attr] > max ? friendsList[i][attr] :  max
+     max = friendsList[i][attr] > max ? friendsList[i][attr] :  max;
   };
 
-  return max
+  return max;
 }
 
-var friendsTotal = friends.length
-var maxFriendsCommon = maxOfFriendsList(friends, "friendsInCommon")
-var maxLikesCommon = maxOfFriendsList(friends, "commonLikes")
+var friendsTotal = friends.length;
+// var maxFriendsCommon = maxOfFriendsList(friends, "friendsInCommon");
+var maxLikesCommon = maxOfFriendsList(friends, "commonBooks");
 
 //origins of the graph 
-var xOrigin = 500
-var yOrigin = 500
+var xOrigin = 500;
+var yOrigin = 400;
 
-var distanceFromMeMax = 300
+var distanceFromMeMax = 500;
 //plots the data
 svgContainer.selectAll("circle")
             .data(friends)
             .enter()
             .append("circle")
-            .attr("cx",function(d, i){return coordinateX(d["friendsInCommon"],d["commonLikes"], i)})
-            .attr("cy",function(d, i){return coordinateY(d["friendsInCommon"],d["commonLikes"], i)})
+            .attr("cx",function(d, i){return coordinateX(d["commonBooks"], i)})
+            .attr("cy",function(d, i){return coordinateY(d["commonBooks"], i)})
             .attr("r", 3)
-            .style("fill", "blue")
+            .attr("class", "friend");
+
 //plots myself (red dot)
 svgContainer.append("circle")
             .attr("cx",xOrigin)
             .attr("cy",yOrigin)
             .attr("r", 3)
-            .style("fill", "red")
+            .style("fill", "red");
 //calculates the x coordinate basd
-function coordinateX(nFriends, nLikes, i){
+function coordinateX(nLikes, i){
 
-  var angle = 2 * Math.PI * (i/friendsTotal)
-  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax)
-
- // console.log(distance)
- // console.log(angle)
-
-  var rv = xOrigin + distance * Math.cos(angle);
-
-  //console.log(rv)
-
-  return  rv
-
+  var angle = 2 * Math.PI * (i/friendsTotal);
+  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax);
+  return xOrigin + distance * Math.cos(angle);
   //return nFriends * 10
 }
 
-function coordinateY(nFriends, nLikes, i){
+function coordinateY(nLikes, i){
 
-  var angle = 2*Math.PI * (i/friendsTotal)
-  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax)
-
+  var angle = 2*Math.PI * (i/friendsTotal);
+  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax);
   return  yOrigin + distance * Math.sin(angle);
 
   //return nLikes * 10 
 }
 
-console.log("max Friends in Common "+ maxFriendsCommon)
-console.log("max Likes in Common "+ maxLikesCommon)
+console.log("max Friends in Common "+ maxFriendsCommon);
+console.log("max Likes in Common "+ maxLikesCommon);
