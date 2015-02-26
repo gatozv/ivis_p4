@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-	<title>Plotting friends</title>
-</head>
-<body style="text-align: center">
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-
-<script>
 //initialize variables
 var svgWidth = 1000;
 var svgHeight= 1000;
@@ -97,7 +89,3 @@ function coordinateY(nFriends, nLikes, i){
 
 console.log("max Friends in Common "+ maxFriendsCommon)
 console.log("max Likes in Common "+ maxLikesCommon)
-
-</script>
-</body>
-</html>
