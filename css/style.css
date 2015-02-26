@@ -41,6 +41,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010305', end
 	    /* W3C */
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00264c', endColorstr='#d6b8bd', GradientType=0);
     /* IE6-9 */
+    -webkit-animation: fadeOut 10s forwards;
+    -moz-animation: fadeOut 10s forwards;
     animation: fadeOut 10s forwards;
 
 }
