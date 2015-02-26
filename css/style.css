@@ -1,0 +1,16 @@
+html {
+    font-size: 15px;
+}
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    background: black;
+    text-align: center
+}
+
+.friend{
+	fill: #F2F1EF;
+
+}
