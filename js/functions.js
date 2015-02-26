@@ -7,7 +7,7 @@ var svgContainer = d3.select("svg") //create container
                      .attr("width", svgWidth )
                      .attr("height",svgHeight)
                      .attr("id", "svgContainer");
-console.log(importFriends());
+//console.log(importFriends());
 //create the blurry lines
 var radialGradient = svgContainer.append("defs").append("radialGradient")
                           .attr("id","grad1")
@@ -24,15 +24,17 @@ radialGradient.append("stop")
               .style("stop-color","#F2F1EF")
               .style("stop-opacity",0)
 
+var initFriends = importFriends();
 var friends = [];
 
 //random friends generator
-for (var i = 0; i <85 ; i++) {
+for (var i = 0; i <initFriends.length ; i++) {
   
   var friend = {};
-  friend["id"] = i;
-  friend["totalBooks"] = Math.round(Math.random() * 600) ;
-  friend["commonBooks"] = Math.round(Math.random() * 100);
+  friend["id"] = initFriends[i].id;
+  friend["name"] = initFriends[i].name;
+  friend["totalBooks"] = initFriends[i].their_total_books_count;
+  friend["commonBooks"] = initFriends[i].common_count;
   friends.push(friend);
 };
 
@@ -55,7 +57,7 @@ var yOrigin = window.outerHeight/2;
 
 var distanceFromMeMax = 500;
 //creates a scale for the number of books
-var scale = d3.scale.linear().domain([0,600]).range([1,10]);
+var scale = d3.scale.linear().domain([0,600]).range([3,10]);
 
 //plots the data
 svgContainer.selectAll("circle")
@@ -65,6 +67,8 @@ svgContainer.selectAll("circle")
             .attr("cx",function(d, i){return coordinateX(d["commonBooks"], i)})
             .attr("cy",function(d, i){return coordinateY(d["commonBooks"], i)})
             .attr("r", function(d) {return scale(d["totalBooks"])   })
+            .attr("id", function(d){ return d["id"] + d["name"];})
+            .attr()
             .style("opacity","0")
             .attr("class", "friend")
             .attr("fill", "url(#grad1)");
