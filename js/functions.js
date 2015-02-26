@@ -77,8 +77,9 @@ svgContainer.selectAll("circle")
             .style("opacity","0")
             .attr("class", "friend")
             .attr("fill", "url(#grad1)");
-svgContainer.selectAll("circle")
-            .transition()
+var circles = svgContainer.selectAll("circle");
+circles[0] = d3.shuffle(circles[0]);
+      circles.transition()
             .delay(function(d,i){
               return i*100;
             })
@@ -95,7 +96,7 @@ svgContainer.append("circle")
 function coordinateX(nBooks, i){
 
   var angle = 2*Math.PI * (i/friendsTotal);
-  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax);
+  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax)+20;
   return xOrigin + distance * Math.cos(angle);
   //return nFriends * 10
 }
@@ -103,7 +104,7 @@ function coordinateX(nBooks, i){
 function coordinateY(nBooks, i){
 
   var angle = 2*Math.PI * (i/friendsTotal);
-  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax);
+  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax) +20;
   return  yOrigin + distance * Math.sin(angle);
 
   //return nBooks * 10 
