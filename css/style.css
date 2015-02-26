@@ -73,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010305', end
 }
 
 .friend {
-    fill: #F2F1EF;
+    /*fill: #F2F1EF;*/
 }
 
 #svgContainer{

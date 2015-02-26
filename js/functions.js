@@ -17,10 +17,10 @@ var radialGradient = svgContainer.append("defs").append("radialGradient")
                           .attr("fy","50%");
 radialGradient.append("stop")
               .attr("offset","50%")
-              .style("stop-color","white")
+              .style("stop-color","#F2F1EF")
 radialGradient.append("stop")
               .attr("offset","100%")
-              .style("stop-color","white")
+              .style("stop-color","#F2F1EF")
               .style("stop-opacity",0)
 
 
@@ -56,7 +56,7 @@ function maxOfFriendsList(friendsList, attr){
 
 var friendsTotal = friends.length;
 // var maxFriendsCommon = maxOfFriendsList(friends, "friendsInCommon");
-var maxLikesCommon = maxOfFriendsList(friends, "commonBooks");
+var maxCommonBooks = maxOfFriendsList(friends, "commonBooks");
 
 //origins of the graph 
 var xOrigin = 500;
@@ -77,9 +77,8 @@ svgContainer.selectAll("circle")
             .style("opacity","0")
             .attr("class", "friend")
             .attr("fill", "url(#grad1)");
-var circles = svgContainer.selectAll("circle")
-circles = d3.shuffle(circles);
-    circles.transition()
+svgContainer.selectAll("circle")
+            .transition()
             .delay(function(d,i){
               return i*100;
             })
@@ -93,19 +92,19 @@ svgContainer.append("circle")
             .attr("r", 3)
             .style("fill", "red");
 //calculates the x coordinate basd
-function coordinateX(nLikes, i){
+function coordinateX(nBooks, i){
 
-  var angle = 2 * Math.PI * (i/friendsTotal);
-  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax);
+  var angle = 2*Math.PI * (i/friendsTotal);
+  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax);
   return xOrigin + distance * Math.cos(angle);
   //return nFriends * 10
 }
 
-function coordinateY(nLikes, i){
+function coordinateY(nBooks, i){
 
   var angle = 2*Math.PI * (i/friendsTotal);
-  var distance = distanceFromMeMax - (nLikes / maxLikesCommon * distanceFromMeMax);
+  var distance = distanceFromMeMax - (nBooks / maxCommonBooks * distanceFromMeMax);
   return  yOrigin + distance * Math.sin(angle);
 
-  //return nLikes * 10 
+  //return nBooks * 10 
 }
