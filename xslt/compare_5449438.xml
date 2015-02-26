@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>176</not_in_common>
+  <your_library_percent>9.50</your_library_percent>
+  <their_library_percent>9.74</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>195</their_total_books_count>
+  <common_count>19</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title>Solaris</title>
+          <id>13243831</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/13243831-solaris]]></url>
+        </book>
+        <your_review>
+          <id>1041305491</id>
+<rating>to-read</rating>
+
+        </your_review>
+        <their_review>
+          <id>1050874799</id>
+<rating>currently-reading</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>2001: A Space Odyssey</title>
+          <id>70535</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/70535.2001]]></url>
+        </book>
+        <your_review>
+          <id>1021956862</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>168606424</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Do Androids Dream of Electric Sheep?]]></title>
+          <id>7082</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7082.Do_Androids_Dream_of_Electric_Sheep_]]></url>
+        </book>
+        <your_review>
+          <id>1022010369</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168610350</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Foundation</title>
+          <id>29579</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/29579.Foundation]]></url>
+        </book>
+        <your_review>
+          <id>1022006395</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>839000985</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Lord of the Rings</title>
+          <id>33</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings]]></url>
+        </book>
+        <your_review>
+          <id>1021961309</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608245</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>American Gods</title>
+          <id>4407</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/4407.American_Gods]]></url>
+        </book>
+        <your_review>
+          <id>1022705271</id>
+<rating>to-read</rating>
+
+        </your_review>
+        <their_review>
+          <id>168606105</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Fahrenheit 451</title>
+          <id>119787</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/119787.Fahrenheit_451]]></url>
+        </book>
+        <your_review>
+          <id>1022012913</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>356157393</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Half-Blood Prince]]></title>
+          <id>1</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince]]></url>
+        </book>
+        <your_review>
+          <id>1021967259</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608194</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Chamber of Secrets]]></title>
+          <id>15881</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets]]></url>
+        </book>
+        <your_review>
+          <id>1021967284</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608199</id>
+<rating>2</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Goblet of Fire]]></title>
+          <id>6</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire]]></url>
+        </book>
+        <your_review>
+          <id>1021967167</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608190</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Deathly Hallows]]></title>
+          <id>136251</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows]]></url>
+        </book>
+        <your_review>
+          <id>1021967139</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608177</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Order of the Phoenix]]></title>
+          <id>2</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix]]></url>
+        </book>
+        <your_review>
+          <id>1021967187</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608205</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Prisoner of Azkaban]]></title>
+          <id>5</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban]]></url>
+        </book>
+        <your_review>
+          <id>1021967122</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608183</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Animal Farm</title>
+          <id>3149348</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3149348-animal-farm]]></url>
+        </book>
+        <your_review>
+          <id>1021991460</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>353934703</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>1984</title>
+          <id>5470</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5470.1984]]></url>
+        </book>
+        <your_review>
+          <id>1021991441</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168609971</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Pride and Prejudice</title>
+          <id>1885</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1885.Pride_and_Prejudice]]></url>
+        </book>
+        <your_review>
+          <id>1022030996</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>168610816</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Catcher in the Rye</title>
+          <id>5107</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye]]></url>
+        </book>
+        <your_review>
+          <id>1022027737</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>500335205</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Great Gatsby</title>
+          <id>4671</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/4671.The_Great_Gatsby]]></url>
+        </book>
+        <your_review>
+          <id>1022018125</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>168604944</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>168608173</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

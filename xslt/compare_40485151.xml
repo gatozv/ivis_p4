@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>438</not_in_common>
+  <your_library_percent>8.50</your_library_percent>
+  <their_library_percent>3.74</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>455</their_total_books_count>
+  <common_count>17</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title>Dune Messiah</title>
+          <id>106</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/106.Dune_Messiah]]></url>
+        </book>
+        <your_review>
+          <id>1021955011</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1209177007</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Girl Who Kicked the Hornet's Nest]]></title>
+          <id>6892870</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/6892870-the-girl-who-kicked-the-hornet-s-nest]]></url>
+        </book>
+        <your_review>
+          <id>1022029913</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206599812</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Dune</title>
+          <id>234225</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/234225.Dune]]></url>
+        </book>
+        <your_review>
+          <id>1021954980</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1209176827</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Girl Who Played with Fire</title>
+          <id>5060378</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5060378-the-girl-who-played-with-fire]]></url>
+        </book>
+        <your_review>
+          <id>1022029906</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206599799</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Hitchhiker's Guide to the Galaxy]]></title>
+          <id>11</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy]]></url>
+        </book>
+        <your_review>
+          <id>1022566430</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206631010</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Brave New World</title>
+          <id>5129</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5129.Brave_New_World]]></url>
+        </book>
+        <your_review>
+          <id>1022010614</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206627834</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Half-Blood Prince]]></title>
+          <id>1</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince]]></url>
+        </book>
+        <your_review>
+          <id>1021967259</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559539</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Chamber of Secrets]]></title>
+          <id>15881</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets]]></url>
+        </book>
+        <your_review>
+          <id>1021967284</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559472</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Fellowship of the Ring</title>
+          <id>34</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/34.The_Fellowship_of_the_Ring]]></url>
+        </book>
+        <your_review>
+          <id>1021961491</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206560775</id>
+<rating>2</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Goblet of Fire]]></title>
+          <id>6</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire]]></url>
+        </book>
+        <your_review>
+          <id>1021967167</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559515</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Deathly Hallows]]></title>
+          <id>136251</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows]]></url>
+        </book>
+        <your_review>
+          <id>1021967139</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559661</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Order of the Phoenix]]></title>
+          <id>2</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix]]></url>
+        </book>
+        <your_review>
+          <id>1021967187</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559557</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Prisoner of Azkaban]]></title>
+          <id>5</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban]]></url>
+        </book>
+        <your_review>
+          <id>1021967122</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559489</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Girl with the Dragon Tattoo]]></title>
+          <id>2429135</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo]]></url>
+        </book>
+        <your_review>
+          <id>1022029896</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206600081</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>1984</title>
+          <id>5470</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5470.1984]]></url>
+        </book>
+        <your_review>
+          <id>1021991441</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206627679</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Hobbit</title>
+          <id>5907</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5907.The_Hobbit]]></url>
+        </book>
+        <your_review>
+          <id>1021961390</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206560570</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1206559446</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

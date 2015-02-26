@@ -22,7 +22,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010305', end
 
 #gradient{
 	position: absolute;
-	height: 110%;
+	height: 100%;
 	width: 100%;
 	z-index: -6;
 	/*sunset start gradient*/

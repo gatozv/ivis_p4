@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+  <your_library_percent>0.50</your_library_percent>
+  <their_library_percent>100.00</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>1</their_total_books_count>
+  <common_count>1</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1210025244</id>
+<rating>read</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

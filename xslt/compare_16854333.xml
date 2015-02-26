@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>127</not_in_common>
+  <your_library_percent>5.50</your_library_percent>
+  <their_library_percent>8.03</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>138</their_total_books_count>
+  <common_count>11</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title>The Last Question</title>
+          <id>4808763</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/4808763-the-last-question]]></url>
+        </book>
+        <your_review>
+          <id>1022578378</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>518433558</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Left Hand of Darkness</title>
+          <id>18423</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/18423.The_Left_Hand_of_Darkness]]></url>
+        </book>
+        <your_review>
+          <id>1022012050</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>751994555</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Animal Farm / 1984</title>
+          <id>5472</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5472.Animal_Farm_1984]]></url>
+        </book>
+        <your_review>
+          <id>1022041802</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>752816325</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Dirk Gently's Holistic Detective Agency]]></title>
+          <id>365</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/365.Dirk_Gently_s_Holistic_Detective_Agency]]></url>
+        </book>
+        <your_review>
+          <id>1021990463</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>518449861</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Neuromancer</title>
+          <id>22328</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/22328.Neuromancer]]></url>
+        </book>
+        <your_review>
+          <id>1022010182</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>1034589610</id>
+<rating>did-not-finish</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Do Androids Dream of Electric Sheep?]]></title>
+          <id>7082</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7082.Do_Androids_Dream_of_Electric_Sheep_]]></url>
+        </book>
+        <your_review>
+          <id>1022010369</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>775498710</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Time Machine</title>
+          <id>2493</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2493.The_Time_Machine]]></url>
+        </book>
+        <your_review>
+          <id>1022036438</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1164468411</id>
+<rating>read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Foundation</title>
+          <id>29579</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/29579.Foundation]]></url>
+        </book>
+        <your_review>
+          <id>1022006395</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>518446678</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Brave New World</title>
+          <id>6715623</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/6715623-brave-new-world]]></url>
+        </book>
+        <your_review>
+          <id>1022010614</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>518449851</id>
+<rating>read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Lord of the Flies</title>
+          <id>7624</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7624.Lord_of_the_Flies]]></url>
+        </book>
+        <your_review>
+          <id>1022566817</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>761597826</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>1984</title>
+          <id>5470</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5470.1984]]></url>
+        </book>
+        <your_review>
+          <id>1021991441</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1141767066</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

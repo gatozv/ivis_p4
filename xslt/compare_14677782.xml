@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>67</not_in_common>
+  <your_library_percent>1.50</your_library_percent>
+  <their_library_percent>4.29</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>70</their_total_books_count>
+  <common_count>3</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title>I, Robot</title>
+          <id>41804</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/41804.I_Robot]]></url>
+        </book>
+        <your_review>
+          <id>1022006449</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>457908894</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Foundation</title>
+          <id>29579</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/29579.Foundation]]></url>
+        </book>
+        <your_review>
+          <id>1022006395</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>457908643</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>457891873</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

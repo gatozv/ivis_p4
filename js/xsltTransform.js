@@ -11,9 +11,9 @@ function loadXMLDoc (filename) {
 		return xhttp.responseXML;
 	}
 
-function parseXML() {
-	xml = loadXMLDoc("./xslt/friends.xml");
-	xsl = loadXMLDoc("./xslt/GoodReadsTrafo.xslt");
+function parseXML(xmlFile, xslFile) {
+	xml = loadXMLDoc(xmlFile);
+	xsl = loadXMLDoc(xslFile);
 	// code for IE
 	if (window.ActiveXObject || xhttp.responseType == "msxml-document")
 	{

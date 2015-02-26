@@ -14,19 +14,17 @@
 	</xsl:template>
 	
 	<xsl:template match="friends">
-		{<xsl:apply-templates select="user"/>}
+		[<xsl:apply-templates select="user"/>]
 	</xsl:template>
 	
 	<xsl:template match="user">
-		<xsl:text>"</xsl:text>
+		<xsl:text>{"id":"</xsl:text>
 		<xsl:value-of select="./id/."/>
-		<xsl:text>"</xsl:text>
-		<xsl:text>:</xsl:text>
-		<xsl:text>"</xsl:text>
+		<xsl:text>", "name":"</xsl:text>
 		<xsl:value-of select="./name/."/>
-		<xsl:text>"</xsl:text>
+		<xsl:text>"}</xsl:text>
 		<xsl:if test="position() != last()">
-			<xsl:text>,</xsl:text>
+			<xsl:text>, </xsl:text>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>

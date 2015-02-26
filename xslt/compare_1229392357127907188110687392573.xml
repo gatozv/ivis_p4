@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <error>
+    <code>40004</code>
+    <generic><![CDATA[One or more parameters contains a value that did not resolve]]></generic>
+      <detail><![CDATA[User with that id not found]]></detail>
+      <friendly><![CDATA[User with that id not found]]></friendly>
+  </error>
+</GoodreadsResponse>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>44</not_in_common>
+  <your_library_percent>11.50</your_library_percent>
+  <their_library_percent>34.33</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>67</their_total_books_count>
+  <common_count>23</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title>Enigma Otiliei</title>
+          <id>1150759</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1150759.Enigma_Otiliei]]></url>
+        </book>
+        <your_review>
+          <id>1021965357</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>455112385</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Maitreyi</title>
+          <id>817199</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/817199.Maitreyi]]></url>
+        </book>
+        <your_review>
+          <id>1021987546</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>455112320</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Hunchback of Notre-Dame</title>
+          <id>30597</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/30597.The_Hunchback_of_Notre_Dame]]></url>
+        </book>
+        <your_review>
+          <id>1021968433</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>417347461</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>A Dance with Dragons</title>
+          <id>10664113</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/10664113-a-dance-with-dragons]]></url>
+        </book>
+        <your_review>
+          <id>1022016867</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417352682</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>A Feast for Crows</title>
+          <id>13497</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/13497.A_Feast_for_Crows]]></url>
+        </book>
+        <your_review>
+          <id>1022016828</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417352674</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>A Storm of Swords</title>
+          <id>62291</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/62291.A_Storm_of_Swords]]></url>
+        </book>
+        <your_review>
+          <id>1022016704</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417352658</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>A Clash of Kings</title>
+          <id>10572</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/10572.A_Clash_of_Kings]]></url>
+        </book>
+        <your_review>
+          <id>1022016642</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417352501</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Lolita</title>
+          <id>7604</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7604.Lolita]]></url>
+        </book>
+        <your_review>
+          <id>1022029317</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>417351760</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Picture of Dorian Gray</title>
+          <id>5297</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5297.The_Picture_of_Dorian_Gray]]></url>
+        </book>
+        <your_review>
+          <id>1021991740</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417353489</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Hitchhiker's Guide to the Galaxy]]></title>
+          <id>11</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy]]></url>
+        </book>
+        <your_review>
+          <id>1022566430</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1034276502</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>A Game of Thrones</title>
+          <id>13496</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/13496.A_Game_of_Thrones]]></url>
+        </book>
+        <your_review>
+          <id>1022016549</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417345151</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Jane Eyre</title>
+          <id>10210</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/10210.Jane_Eyre]]></url>
+        </book>
+        <your_review>
+          <id>1022014302</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>417344385</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Fellowship of the Ring</title>
+          <id>34</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/34.The_Fellowship_of_the_Ring]]></url>
+        </book>
+        <your_review>
+          <id>1021961491</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417347258</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Lord of the Flies</title>
+          <id>7624</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7624.Lord_of_the_Flies]]></url>
+        </book>
+        <your_review>
+          <id>1022566817</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>417353007</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Mockingjay</title>
+          <id>7260188</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/7260188-mockingjay]]></url>
+        </book>
+        <your_review>
+          <id>1022033647</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>452977840</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Girl with the Dragon Tattoo]]></title>
+          <id>2429135</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo]]></url>
+        </book>
+        <your_review>
+          <id>1022029896</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>417354081</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Catching Fire</title>
+          <id>6148028</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/6148028-catching-fire]]></url>
+        </book>
+        <your_review>
+          <id>1022033631</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>452977631</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>1984</title>
+          <id>5470</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5470.1984]]></url>
+        </book>
+        <your_review>
+          <id>1021991441</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>417346931</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Pride and Prejudice</title>
+          <id>1885</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1885.Pride_and_Prejudice]]></url>
+        </book>
+        <your_review>
+          <id>1022030996</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>417344553</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Catcher in the Rye</title>
+          <id>5107</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye]]></url>
+        </book>
+        <your_review>
+          <id>1022027737</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>417346842</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>To Kill a Mockingbird</title>
+          <id>2657</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird]]></url>
+        </book>
+        <your_review>
+          <id>1022018507</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>417346823</id>
+<rating>to-read</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>417345104</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Hunger Games</title>
+          <id>2767052</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2767052-the-hunger-games]]></url>
+        </book>
+        <your_review>
+          <id>1022033618</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>417345478</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>

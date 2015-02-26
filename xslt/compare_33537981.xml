@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[user_compare]]></method>
+  </Request>
+  <compare>
+    <not_in_common>24</not_in_common>
+  <your_library_percent>6.50</your_library_percent>
+  <their_library_percent>35.14</their_library_percent>
+  <your_total_books_count>200</your_total_books_count>
+  <their_total_books_count>37</their_total_books_count>
+  <common_count>13</common_count>
+  <reviews>
+      <review>
+        <book>
+          <title><![CDATA[La ţigănci & Pe strada Mîntuleasa The Gypsy / Mîntuleasa Street]]></title>
+          <id>10787281</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/10787281-la-ig-nci-pe-strada-m-ntuleasa-the-gypsy-m-ntuleasa-street]]></url>
+        </book>
+        <your_review>
+          <id>1021987588</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012313018</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Iona</title>
+          <id>2920664</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2920664-iona]]></url>
+        </book>
+        <your_review>
+          <id>1021965408</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012313553</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Ultima noapte de dragoste, întîia noapte de război]]></title>
+          <id>768777</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/768777.Ultima_noapte_de_dragoste_nt_ia_noapte_de_r_zboi]]></url>
+        </book>
+        <your_review>
+          <id>1021994253</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012312906</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Enigma Otiliei</title>
+          <id>1150759</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1150759.Enigma_Otiliei]]></url>
+        </book>
+        <your_review>
+          <id>1021965357</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012312857</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[The Sacred and the Profane: The Nature of Religion]]></title>
+          <id>28024</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/28024.The_Sacred_and_the_Profane]]></url>
+        </book>
+        <your_review>
+          <id>1021987709</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012312491</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Maitreyi</title>
+          <id>817199</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/817199.Maitreyi]]></url>
+        </book>
+        <your_review>
+          <id>1021987546</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012312448</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Jane Eyre</title>
+          <id>10210</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/10210.Jane_Eyre]]></url>
+        </book>
+        <your_review>
+          <id>1022014302</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012303627</id>
+<rating>3</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Fellowship of the Ring</title>
+          <id>34</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/34.The_Fellowship_of_the_Ring]]></url>
+        </book>
+        <your_review>
+          <id>1021961491</id>
+<rating>5</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012304242</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>1984</title>
+          <id>5470</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/5470.1984]]></url>
+        </book>
+        <your_review>
+          <id>1021991441</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012303543</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>Pride and Prejudice</title>
+          <id>1885</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/1885.Pride_and_Prejudice]]></url>
+        </book>
+        <your_review>
+          <id>1022030996</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012302879</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>The Great Gatsby</title>
+          <id>4671</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/4671.The_Great_Gatsby]]></url>
+        </book>
+        <your_review>
+          <id>1022018125</id>
+<rating>2</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012302985</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title>To Kill a Mockingbird</title>
+          <id>2657</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird]]></url>
+        </book>
+        <your_review>
+          <id>1022018507</id>
+<rating>3</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012302919</id>
+<rating>4</rating>
+
+        </their_review>
+      </review>
+      <review>
+        <book>
+          <title><![CDATA[Harry Potter and the Sorcerer's Stone]]></title>
+          <id>3</id>
+          <url><![CDATA[https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone]]></url>
+        </book>
+        <your_review>
+          <id>1021967104</id>
+<rating>4</rating>
+
+        </your_review>
+        <their_review>
+          <id>1012304198</id>
+<rating>5</rating>
+
+        </their_review>
+      </review>
+  </reviews>
+</compare>
+
+</GoodreadsResponse>
