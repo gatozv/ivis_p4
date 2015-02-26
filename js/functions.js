@@ -8,6 +8,23 @@ var svgContainer = d3.select("svg") //create container
                      .attr("height",svgHeight)
                      .attr("id", "svgContainer");
 
+var radialGradient = svgContainer.append("defs").append("radialGradient")
+                          .attr("id","grad1")
+                          .attr("cx","50%")
+                          .attr("cy","50%")
+                          .attr("r","50%")
+                          .attr("fx","50%")
+                          .attr("fy","50%");
+radialGradient.append("stop")
+              .attr("offset","50%")
+              .style("stop-color","white")
+radialGradient.append("stop")
+              .attr("offset","100%")
+              .style("stop-color","white")
+              .style("stop-opacity",0)
+
+
+
 var friends = [];
 
 //random friends generator
@@ -18,8 +35,9 @@ for (var i = 0; i <85 ; i++) {
 
   friend["id"] = i;
 
-  friend["friendsInCommon"] = Math.round(Math.random() * 100) ;
+  friend["totalBooks"] = Math.round(Math.random() * 600) ;
   friend["commonBooks"] = Math.round(Math.random() * 100);
+
 
   friends.push(friend);
 };
@@ -46,14 +64,27 @@ var yOrigin = 400;
 
 var distanceFromMeMax = 500;
 //plots the data
+var scale = d3.scale.linear().domain([0,600]).range([1,10]);
+
+
 svgContainer.selectAll("circle")
             .data(friends)
             .enter()
             .append("circle")
             .attr("cx",function(d, i){return coordinateX(d["commonBooks"], i)})
             .attr("cy",function(d, i){return coordinateY(d["commonBooks"], i)})
-            .attr("r", 3)
-            .attr("class", "friend");
+            .attr("r", function(d) {return scale(d["totalBooks"])   })
+            .style("opacity","0")
+            .attr("class", "friend")
+            .attr("fill", "url(#grad1)");
+var circles = svgContainer.selectAll("circle")
+circles = d3.shuffle(circles);
+    circles.transition()
+            .delay(function(d,i){
+              return i*100;
+            })
+            .duration(1000)
+            .style("opacity","1");
 
 //plots myself (red dot)
 svgContainer.append("circle")
@@ -78,6 +109,3 @@ function coordinateY(nLikes, i){
 
   //return nLikes * 10 
 }
-
-console.log("max Friends in Common "+ maxFriendsCommon);
-console.log("max Likes in Common "+ maxLikesCommon);
