@@ -7,6 +7,7 @@ var svgContainer = d3.select("svg") //create container
                      .attr("width", svgWidth )
                      .attr("height",svgHeight)
                      .attr("id", "svgContainer");
+console.log(importFriends());
 //create the blurry lines
 var radialGradient = svgContainer.append("defs").append("radialGradient")
                           .attr("id","grad1")
