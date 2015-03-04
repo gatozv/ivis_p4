@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[iSAfjzMo6QHWifwOfCQvQ]]></key>
+    <method><![CDATA[review_list]]></method>
+  </Request>
+  <reviews start="1" end="14" total="14">
+    <review>
+  <id>521353191</id>
+    <book>
+  <id type="integer">37553</id>
+  <isbn>0192804782</isbn>
+  <isbn13>9780192804785</isbn13>
+  <text_reviews_count type="integer">190</text_reviews_count>
+  <title>Sense and Sensibility</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/37553.Sense_and_Sensibility</link>
+  <num_pages>327</num_pages>
+  <format>Paperback</format>
+  <edition_information/>
+  <publisher>Oxford University Press, USA</publisher>
+  <publication_day>29</publication_day>
+  <publication_year>2004</publication_year>
+  <publication_month>4</publication_month>
+  <average_rating>4.04</average_rating>
+  <ratings_count>614334</ratings_count>
+  <description>In her first published novel, Sense and Sensibility, Jane Austen presents us with the subtle portraits of two contrasting but equally compelling heroines. For sensible Elinor Dashwood and her impetuous younger sister Marianne the prospect of marrying the men they love appears remote. In a world ruled by money and self-interest, the Dashwood sisters have neither fortune nor connections. Concerned for others and for social proprieties, Elinor is ill-equipped to compete with self-centered fortune-hunters like Lucy Steele, while Marianne's unswerving belief in the truth of her own feelings makes her more dangerously susceptible to the designs of unscrupulous men.&lt;br&gt; Through her heroines' parallel experiences of love, loss, and hope, Jane Austen offers a powerful analysis of the ways in which women's lives were shaped by the claustrophobic society in which they had to survive. This revised edition contains new notes, appendices, chronology, and bibliography.</description>
+<authors>
+<author>
+<id>1265</id>
+<name>Jane Austen</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1380085320p5/1265.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1380085320p2/1265.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1265.Jane_Austen]]></link>
+<average_rating>4.10</average_rating>
+<ratings_count>3235065</ratings_count>
+<text_reviews_count>81933</text_reviews_count>
+</author>
+</authors>
+  <published>2004</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+  <shelf name="read" exclusive="true" />
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:17:05 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:17:05 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521353191]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521353191]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521352963</id>
+    <book>
+  <id type="integer">50165</id>
+  <isbn>1551111802</isbn>
+  <isbn13>9781551111803</isbn13>
+  <text_reviews_count type="integer">325</text_reviews_count>
+  <title>Jane Eyre</title>
+  <image_url>https://d.gr-assets.com/books/1288757721m/50165.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1288757721s/50165.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/50165.Jane_Eyre</link>
+  <num_pages>680</num_pages>
+  <format>Paperback</format>
+  <edition_information/>
+  <publisher>Broadview Press</publisher>
+  <publication_day>12</publication_day>
+  <publication_year>1999</publication_year>
+  <publication_month>1</publication_month>
+  <average_rating>4.07</average_rating>
+  <ratings_count>957394</ratings_count>
+  <description>Charlotte Bronte's impassioned novel is the love story of Jane Eyre, a plain yet spirited governess, and her arrogant, brooding Mr. Rochester. Published in 1847, under the pseudonym of Currer Bell, the book heralded a new kind of heroine—one whose virtuous integrity, keen intellect and tireless perseverance broke through class barriers to win equal stature with the man she loved. Hailed by William Makepeace Thackeray as "the masterwork of great genius," &lt;em&gt;Jane Eyre&lt;/em&gt; is still regarded, over a century later, as one of the finest novels in English literature.</description>
+<authors>
+<author>
+<id>1036615</id>
+<name>Charlotte Brontë</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1335001351p5/1036615.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1335001351p2/1036615.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1036615.Charlotte_Bront_]]></link>
+<average_rating>4.05</average_rating>
+<ratings_count>1040999</ratings_count>
+<text_reviews_count>27514</text_reviews_count>
+</author>
+</authors>
+  <published>1999</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+  <shelf name="read" exclusive="true" />
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:16:20 -0800 2013</date_added>
+  <date_updated>Tue Aug 05 19:34:33 -0700 2014</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521352963]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521352963]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521353055</id>
+    <book>
+  <id type="integer">84979</id>
+  <isbn>0553213105</isbn>
+  <isbn13>9780553213102</isbn13>
+  <text_reviews_count type="integer">2073</text_reviews_count>
+  <title>Pride and Prejudice</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/84979.Pride_and_Prejudice</link>
+  <num_pages>334</num_pages>
+  <format>Paperback</format>
+  <edition_information>Bantam Classic Reissue</edition_information>
+  <publisher>Bantam Classic</publisher>
+  <publication_day>1</publication_day>
+  <publication_year>2003</publication_year>
+  <publication_month>3</publication_month>
+  <average_rating>4.23</average_rating>
+  <ratings_count>1506363</ratings_count>
+  <description>Since its immediate success in 1813, &lt;em&gt;Pride and Prejudice&lt;/em&gt; has remained one of the most popular novels in the English language. Jane Austen called this brilliant work "her own darling child" and its vivacious heroine, Elizabeth Bennet, "as delightful a creature as ever appeared in print." The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England.</description>
+<authors>
+<author>
+<id>1265</id>
+<name>Jane Austen</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1380085320p5/1265.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1380085320p2/1265.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1265.Jane_Austen]]></link>
+<average_rating>4.10</average_rating>
+<ratings_count>3235065</ratings_count>
+<text_reviews_count>81933</text_reviews_count>
+</author>
+</authors>
+  <published>2003</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+  <shelf name="read" exclusive="true" />
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:15:57 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:15:57 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521353055]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521353055]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521352247</id>
+    <book>
+  <id type="integer">706</id>
+  <isbn>0713998946</isbn>
+  <isbn13>9780713998948</isbn13>
+  <text_reviews_count type="integer">981</text_reviews_count>
+  <title>America (The Book): A Citizen's Guide to Democracy Inaction</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/706.America_The_Book_</link>
+  <num_pages>228</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher></publisher>
+  <publication_day/>
+  <publication_year/>
+  <publication_month/>
+  <average_rating>4.02</average_rating>
+  <ratings_count>71134</ratings_count>
+  <description>Jon Stewart, host of the Emmy and Peabody Award-winning &lt;em&gt;The Daily Show&lt;/em&gt;, and his coterie of patriots, deliver a hilarious look at American government.&lt;p&gt;American-style democracy is the world's most beloved form of government, which explains why so many other nations are eager for us to impose it on them. But what is American democracy? In &lt;em&gt;America (The Book)&lt;/em&gt;, Jon Stewart and &lt;em&gt;The Daily Show&lt;/em&gt; writing staff offer their insights into our unique system of government, dissecting its institutions, explaining its history and processes, and exploring the reasons why concepts like one man, one vote, government by the people, and every vote counts have become such popular urban myths. Topics include: Ancient Rome: The First Republicans; The Founding Fathers: Young, Gifted, and White; The Media: Can it Be Stopped?; and more!&lt;/p&gt;</description>
+<authors>
+<author>
+<id>466</id>
+<name>Jon Stewart</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1206560357p5/466.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1206560357p2/466.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/466.Jon_Stewart]]></link>
+<average_rating>3.96</average_rating>
+<ratings_count>98498</ratings_count>
+<text_reviews_count>2734</text_reviews_count>
+</author>
+</authors>
+  <published/>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352720840" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:13:50 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:13:50 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521352247]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521352247]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521351934</id>
+    <book>
+  <id type="integer">1911</id>
+  <isbn>0374292795</isbn>
+  <isbn13>9780374292799</isbn13>
+  <text_reviews_count type="integer">2367</text_reviews_count>
+  <title>The World Is Flat: A Brief History of the Twenty-first Century</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/1911.The_World_Is_Flat</link>
+  <num_pages>616</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher>Farrar, Straus and Giroux (NY)</publisher>
+  <publication_day>18</publication_day>
+  <publication_year>2006</publication_year>
+  <publication_month>4</publication_month>
+  <average_rating>3.62</average_rating>
+  <ratings_count>64681</ratings_count>
+  <description>This new edition of &lt;em&gt;The World Is Flat&lt;/em&gt; is Friedman's account of the great changes taking place in our time, as lightning-swift advances in technology &amp;amp; communications put people all over the globe in touch as never before--creating an explosion of wealth in India &amp;amp; China, &amp;amp; challenging the rest to run even faster just to stay in place. This updated &amp;amp; expanded edition features over a 100 pages of new reporting &amp;amp; commentary, drawn from Friedman's travels round the world &amp;amp; across the American heartland--from anyplace where the flattening of the world is being felt. &lt;em&gt;The World Is Flat&lt;/em&gt; shows "how &amp;amp; why globalization has now shifted into warp drive" (Robert Wright, Slate) &amp;amp; demystifies the new flat world for readers, allowing them to make sense of the often bewildering scene unfolding before their eyes. With his ability to translate complex foreign policy &amp;amp; economic issues, he explains how the flattening of the world happened at the dawn of the 21st century; what it means to countries, companies, communities &amp;amp; individuals; how governments &amp;amp; societies must adapt &amp;amp; why terrorists want to stand in the way. &lt;em&gt;The World Is Flat&lt;/em&gt; is an essential update on globalization, its successes &amp;amp; discontents, powerfully illuminated by a respected journalist.</description>
+<authors>
+<author>
+<id>18675</id>
+<name>Thomas L. Friedman</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1209400955p5/18675.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1209400955p2/18675.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/18675.Thomas_L_Friedman]]></link>
+<average_rating>3.66</average_rating>
+<ratings_count>92391</ratings_count>
+<text_reviews_count>5729</text_reviews_count>
+</author>
+</authors>
+  <published>2006</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+  <shelf name="read" exclusive="true" />
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:12:39 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:12:39 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521351934]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521351934]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521351833</id>
+    <book>
+  <id type="integer">69571</id>
+  <isbn>0751532711</isbn>
+  <isbn13>9780751532715</isbn13>
+  <text_reviews_count type="integer">3046</text_reviews_count>
+  <title>Rich Dad, Poor Dad</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/69571.Rich_Dad_Poor_Dad</link>
+  <num_pages>239</num_pages>
+  <format>Paperback</format>
+  <edition_information/>
+  <publisher>Time Warner Books UK</publisher>
+  <publication_day>1</publication_day>
+  <publication_year>2007</publication_year>
+  <publication_month>12</publication_month>
+  <average_rating>3.78</average_rating>
+  <ratings_count>79772</ratings_count>
+  <description>Personal finance author and lecturer Robert T. Kiyosaki developed his unique economic perspective from two very different influences - his two fathers. One father (Robert's real father) was a highly educated man but fiscally poor. The other father was the father of Robert's best friend - that Dad was an eighth-grade drop-out who became a self-made multi-millionaire. The lifelong monetary problems experienced by his poor dad pounded home the counterpoint communicated by his rich dad. Taking that message to heart, Kiyosaki was able to retire at 47.</description>
+<authors>
+<author>
+<id>600</id>
+<name>Robert T. Kiyosaki</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1236463010p5/600.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1236463010p2/600.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/600.Robert_T_Kiyosaki]]></link>
+<average_rating>3.85</average_rating>
+<ratings_count>131718</ratings_count>
+<text_reviews_count>5939</text_reviews_count>
+</author>
+</authors>
+  <published>2007</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+  <shelf name="read" exclusive="true" />
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:12:18 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:12:18 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521351833]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521351833]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521351627</id>
+    <book>
+  <id type="integer">81227</id>
+  <isbn>0743289684</isbn>
+  <isbn13>9780743289689</isbn13>
+  <text_reviews_count type="integer">4381</text_reviews_count>
+  <title>Infidel</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/81227.Infidel</link>
+  <num_pages>353</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher>Free Press</publisher>
+  <publication_day>1</publication_day>
+  <publication_year>2007</publication_year>
+  <publication_month>2</publication_month>
+  <average_rating>4.18</average_rating>
+  <ratings_count>45170</ratings_count>
+  <description>In this profoundly affecting memoir from the internationally renowned author of "The Caged Virgin, " Ayaan Hirsi Ali tells her astonishing life story, from her traditional Muslim childhood in Somalia, Saudi Arabia, and Kenya, to her intellectual awakening and activism in the Netherlands, and her current life under armed guard in the West. One of today's most admired and controversial political figures, Ayaan Hirsi Ali burst into international headlines following an Islamist's murder of her colleague, Theo van Gogh, with whom she made the movie "Submission."&lt;br&gt;&lt;br&gt;"Infidel" is the eagerly awaited story of the coming of age of this elegant, distinguished -- and sometimes reviled -- political superstar and champion of free speech. With a gimlet eye and measured, often ironic, voice, Hirsi Ali recounts the evolution of her beliefs, her ironclad will, and her extraordinary resolve to fight injustice done in the name of religion. Raised in a strict Muslim family and extended clan, Hirsi Ali survived civil war, female mutilation, brutal beatings, adolescence as a devout believer during the rise of the Muslim Brotherhood, and life in four troubled, unstable countries largely ruled by despots. In her early twenties, she escaped from a forced marriage and sought asylum in the Netherlands, where she earned a college degree in political science, tried to help her tragically depressed sister adjust to the West, and fought for the rights of Muslim immigrant women and the reform of Islam as a member of Parliament. Even though she is under constant threat -- demonized by reactionary Islamists and politicians, disowned by her father, and expelled from her family and clan -- she refuses to be silenced.&lt;br&gt;&lt;br&gt;Ultimately a celebration of triumph over adversity, Hirsi Ali's story tells how a bright little girl evolved out of dutiful obedience to become an outspoken, pioneering freedom fighter. As Western governments struggle to balance democratic ideals with religious pressures, no story could be timelier or more significant.</description>
+<authors>
+<author>
+<id>46245</id>
+<name>Ayaan Hirsi Ali</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1222672586p5/46245.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1222672586p2/46245.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/46245.Ayaan_Hirsi_Ali]]></link>
+<average_rating>4.12</average_rating>
+<ratings_count>60619</ratings_count>
+<text_reviews_count>5599</text_reviews_count>
+</author>
+</authors>
+  <published>2007</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352720286" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:11:30 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:11:30 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521351627]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521351627]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521350831</id>
+    <book>
+  <id type="integer">7821447</id>
+  <isbn>0061992704</isbn>
+  <isbn13>9780061992704</isbn13>
+  <text_reviews_count type="integer">4617</text_reviews_count>
+  <title>Sh*t My Dad Says</title>
+  <image_url>https://d.gr-assets.com/books/1370399211m/7821447.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1370399211s/7821447.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/7821447-sh-t-my-dad-says</link>
+  <num_pages>159</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher>It Books</publisher>
+  <publication_day>4</publication_day>
+  <publication_year>2010</publication_year>
+  <publication_month>5</publication_month>
+  <average_rating>3.97</average_rating>
+  <ratings_count>82069</ratings_count>
+  <description>After being dumped by his longtime girlfriend, twenty-eight-year-old Justin Halpern found himself living at home with his seventy-three-year-old dad. Sam Halpern, who is "like Socrates, but angrier, and with worse hair," has never minced words, and when Justin moved back home, he began to record all the ridiculous things his dad said to him:&lt;blockquote&gt;"That woman was sexy. . . . Out of your league? Son, let women figure out why they won't screw you. Don't do it for them."&lt;br&gt;&lt;br&gt;"Do people your age know how to comb their hair? It looks like two squirrels crawled on their heads and started fucking."&lt;br&gt;&lt;br&gt;"The worst thing you can be is a liar. . . . Okay, fine, yes, the worst thing you can be is a Nazi, but then number two is liar. Nazi one, liar two."&lt;/blockquote&gt;More than a million people now follow Mr. Halpern's philosophical musings on Twitter, and in this book, his son weaves a brilliantly funny, touching coming-of-age memoir around the best of his quotes. An all-American story that unfolds on the Little League field, in Denny's, during excruciating family road trips, and, most frequently, in the Halperns' kitchen over bowls of Grape-Nuts, &lt;em&gt;Sh*t My Dad Says&lt;/em&gt; is a chaotic, hilarious, true portrait of a father-son relationship from a major new comic voice.</description>
+<authors>
+<author>
+<id>3406353</id>
+<name>Justin Halpern</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1273481881p5/3406353.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1273481881p2/3406353.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/3406353.Justin_Halpern]]></link>
+<average_rating>3.95</average_rating>
+<ratings_count>93833</ratings_count>
+<text_reviews_count>7643</text_reviews_count>
+</author>
+</authors>
+  <published>2010</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352719583" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:08:27 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:08:27 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521350831]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521350831]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521350074</id>
+    <book>
+  <id type="integer">3869</id>
+  <isbn>0553380168</isbn>
+  <isbn13>9780553380163</isbn13>
+  <text_reviews_count type="integer">2401</text_reviews_count>
+  <title>A Brief History of Time</title>
+  <image_url>https://d.gr-assets.com/books/1333578746m/3869.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1333578746s/3869.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time</link>
+  <num_pages>212</num_pages>
+  <format>Paperback</format>
+  <edition_information>Updated &amp; Expanded 10th Anniversary</edition_information>
+  <publisher>Bantam Books</publisher>
+  <publication_day>1</publication_day>
+  <publication_year>1998</publication_year>
+  <publication_month>9</publication_month>
+  <average_rating>4.07</average_rating>
+  <ratings_count>118890</ratings_count>
+  <description>From the time of the ancient Greeks through the present time, this historical overview of cosmology is told by one of the most famous and fascinating scientists today.&lt;br&gt;&lt;br&gt;In the ten years since its publication in 1988, Stephen Hawking's book has become a landmark volume in scientific writing, with more than nine million copies sold worldwide.  That edition was on the cutting edge of what was then known about the nature of the universe.  But the last decade has seen extraordinary advances in the technology of observing both the micro- and the macrocosmic worlds, confirming many of Professor Hawking's theoretical predictions.  Eager to bring to his original text the new knowledge revealed by these observations, he has written a new introduction, updated the original chapters throughout, and added an entirely new chapter on the fascinating subject of wormholes and time travel.</description>
+<authors>
+<author>
+<id>1401</id>
+<name>Stephen Hawking</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1197404653p5/1401.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1197404653p2/1401.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1401.Stephen_Hawking]]></link>
+<average_rating>4.06</average_rating>
+<ratings_count>217244</ratings_count>
+<text_reviews_count>7088</text_reviews_count>
+</author>
+</authors>
+  <published>1998</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352719032" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:06:11 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:06:11 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521350074]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521350074]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521350138</id>
+    <book>
+  <id type="integer">33313</id>
+  <isbn>0060899220</isbn>
+  <isbn13>9780060899226</isbn13>
+  <text_reviews_count type="integer">5591</text_reviews_count>
+  <title>Kitchen Confidential: Adventures in the Culinary Underbelly</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/33313.Kitchen_Confidential</link>
+  <num_pages>312</num_pages>
+  <format>Paperback</format>
+  <edition_information>Updated Edition</edition_information>
+  <publisher>Ecco/Harper Perennial</publisher>
+  <publication_day>9</publication_day>
+  <publication_year>2007</publication_year>
+  <publication_month>1</publication_month>
+  <average_rating>3.97</average_rating>
+  <ratings_count>112394</ratings_count>
+  <description>A deliciously funny, delectably shocking banquet of wild-but-true tales of life in the culinary trade from Chef Anthony Bourdain, laying out his more than a quarter-century of drugs, sex, and haute cuisine—now with all-new, never-before-published material.&lt;br&gt;&lt;br&gt;New York Chef Tony Bourdain gives away secrets of the trade in his wickedly funny, inspiring memoir/expose. &lt;em&gt;Kitchen Confidential&lt;/em&gt; reveals what Bourdain calls "twenty-five years of sex, drugs, bad behavior and haute cuisine."</description>
+<authors>
+<author>
+<id>1124</id>
+<name>Anthony Bourdain</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1274724018p5/1124.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1274724018p2/1124.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1124.Anthony_Bourdain]]></link>
+<average_rating>3.91</average_rating>
+<ratings_count>171242</ratings_count>
+<text_reviews_count>11037</text_reviews_count>
+</author>
+</authors>
+  <published>2007</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352719075" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:05:43 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:05:43 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521350138]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521350138]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521349789</id>
+    <book>
+  <id type="integer">36072</id>
+  <isbn>0743269519</isbn>
+  <isbn13>9780743269513</isbn13>
+  <text_reviews_count type="integer">3214</text_reviews_count>
+  <title>The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change</title>
+  <image_url>https://d.gr-assets.com/books/1421842784m/36072.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1421842784s/36072.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/36072.The_7_Habits_of_Highly_Effective_People</link>
+  <num_pages>372</num_pages>
+  <format>Paperback</format>
+  <edition_information>Anniversary Edition</edition_information>
+  <publisher>Free Press</publisher>
+  <publication_day>9</publication_day>
+  <publication_year>2004</publication_year>
+  <publication_month>11</publication_month>
+  <average_rating>3.96</average_rating>
+  <ratings_count>205310</ratings_count>
+  <description>In &lt;em&gt;The 7 Habits of Highly Effective People,&lt;/em&gt; author Stephen R. Covey presents a holistic, integrated, principle-centered approach for solving personal and professional problems. With penetrating insights and pointed anecdotes, Covey reveals a step-by-step pathway for living with fairness, integrity, service, and human dignity -- principles that give us the security to adapt to change and the wisdom and power to take advantage of the opportunities that change creates.</description>
+<authors>
+<author>
+<id>1538</id>
+<name>Stephen R. Covey</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1321654785p5/1538.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1321654785p2/1538.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/1538.Stephen_R_Covey]]></link>
+<average_rating>3.97</average_rating>
+<ratings_count>257201</ratings_count>
+<text_reviews_count>5627</text_reviews_count>
+</author>
+</authors>
+  <published>2004</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352718794" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:05:07 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:05:07 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521349789]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521349789]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521349486</id>
+    <book>
+  <id type="integer">13547494</id>
+  <isbn>1451656254</isbn>
+  <isbn13>9781451656251</isbn13>
+  <text_reviews_count type="integer">407</text_reviews_count>
+  <title>Because I Said So! : The Truth Behind the Myths, Tales, and Warnings Every Generation Passes Down to Its Kids</title>
+  <image_url>https://d.gr-assets.com/books/1349082009m/13547494.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1349082009s/13547494.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/13547494-because-i-said-so</link>
+  <num_pages>237</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher>Scribner</publisher>
+  <publication_day>4</publication_day>
+  <publication_year>2012</publication_year>
+  <publication_month>12</publication_month>
+  <average_rating>3.55</average_rating>
+  <ratings_count>2056</ratings_count>
+  <description>&lt;strong&gt;Don't cross your eyes or the'll stay like that!&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;Feed a cold, starve a fever!&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;Don't touch your Halloween candy until we get it checked out!&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;Never run with scissors&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;Don't look in the microwave while it's running!&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;This will go down on your permanent record&lt;/strong&gt; &lt;br&gt;&lt;br&gt;&lt;strong&gt;Is any of it true? If so, how true? &lt;/strong&gt;Ken Jennings wants to find out if mother and father always know best. Yes, all those years you were told not to sit too close to the television (you'll hurt your eyes!) or swallow your gum (it stays in your stomach for seven years!) or crack your knuckles (arthritis!) are called into question by our country's leading trivia guru. Jennings separates myth from fact to debunk a wide variety of parental edicts: no swimming after meals, sit up straight, don't talk to strangers, and so on. &lt;br&gt;&lt;br&gt;Armed with medical case histories, scientific findings, and even the occasional experiment on himself (or his kids), Jennings exposes countless examples of parental wisdom run amok. Whether you're a parent who wants to know what you can stop worrying about or a kid (of &lt;em&gt;any &lt;/em&gt;age) looking to say, "I told you so,"; this is the anti-helicopter parenting book you've been waiting for.</description>
+<authors>
+<author>
+<id>45003</id>
+<name>Ken Jennings</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1353968375p5/45003.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1353968375p2/45003.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/45003.Ken_Jennings]]></link>
+<average_rating>3.78</average_rating>
+<ratings_count>8498</ratings_count>
+<text_reviews_count>1490</text_reviews_count>
+</author>
+</authors>
+  <published>2012</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352718532" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:04:03 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:04:03 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521349486]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521349486]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521348696</id>
+    <book>
+  <id type="integer">4214</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">29400</text_reviews_count>
+  <title>Life of Pi</title>
+  <image_url>https://d.gr-assets.com/books/1320562005m/4214.jpg</image_url>
+  <small_image_url>https://d.gr-assets.com/books/1320562005s/4214.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/4214.Life_of_Pi</link>
+  <num_pages>356</num_pages>
+  <format>Paperback</format>
+  <edition_information/>
+  <publisher>Seal Books</publisher>
+  <publication_day>29</publication_day>
+  <publication_year>2006</publication_year>
+  <publication_month>8</publication_month>
+  <average_rating>3.86</average_rating>
+  <ratings_count>865932</ratings_count>
+  <description>Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor "Pi" Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. He survives 227 days after a shipwreck while stranded on a boat in the Pacific Ocean with a Bengal tiger named Richard Parker.</description>
+<authors>
+<author>
+<id>811</id>
+<name>Yann Martel</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1424439580p5/811.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1424439580p2/811.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/811.Yann_Martel]]></link>
+<average_rating>3.85</average_rating>
+<ratings_count>884391</ratings_count>
+<text_reviews_count>40479</text_reviews_count>
+</author>
+</authors>
+  <published>2006</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="to-read" exclusive="true" review_shelf_id="352717943" sortable="true" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 01:01:19 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 01:01:19 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521348696]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521348696]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>521341810</id>
+    <book>
+  <id type="integer">24284</id>
+  <isbn>0375403175</isbn>
+  <isbn13>9780375403170</isbn13>
+  <text_reviews_count type="integer">379</text_reviews_count>
+  <title>Les Misérables</title>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/24284.Les_Mis_rables</link>
+  <num_pages></num_pages>
+  <format></format>
+  <edition_information>Everyman's Library</edition_information>
+  <publisher></publisher>
+  <publication_day/>
+  <publication_year>1998</publication_year>
+  <publication_month>3</publication_month>
+  <average_rating>4.10</average_rating>
+  <ratings_count>446002</ratings_count>
+  <description>Introducing one of the most famous characters in literature, Jean Valjean-the noble peasant imprisoned for stealing a loaf of bread-&lt;em&gt;Les Misérables&lt;/em&gt; (1862) ranks among the greatest novels of all time. In it Victor Hugo takes readers deep into the Parisian underworld, immerses them in a battle between good &amp;amp; evil, &amp;amp; carries them onto the barricades during the uprising of 1832 with a breathtaking realism unsurpassed in modern prose. &lt;br&gt;Within his dramatic story are themes that capture the intellect &amp;amp; the emotions: crime &amp;amp; punishment, the relentless persecution of Valjean by Inspector Javert, the desperation of the prostitute Fantine, the amorality of the rogue Thénardier &amp;amp; the universal desire to escape the prisons of our own minds. &lt;em&gt;Les Misérables&lt;/em&gt; gave Hugo a canvas upon which he portrayed his criticism of the French political &amp;amp; judicial systems, but the portrait which resulted is larger than life, epic in scope-an extravagant spectacle that dazzles the senses as it touches the heart.</description>
+<authors>
+<author>
+<id>13661</id>
+<name>Victor Hugo</name>
+<role></role>
+<image_url>
+<![CDATA[https://d.gr-assets.com/authors/1415946858p5/13661.jpg]]>
+</image_url>
+<small_image_url>
+<![CDATA[https://d.gr-assets.com/authors/1415946858p2/13661.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/13661.Victor_Hugo]]></link>
+<average_rating>4.07</average_rating>
+<ratings_count>575850</ratings_count>
+<text_reviews_count>14632</text_reviews_count>
+</author>
+</authors>
+  <published>1998</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+
+  
+
+<shelves>
+
+    <shelf name="currently-reading" exclusive="true" review_shelf_id="352712304" sortable="false" />
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at>Wed Jan 30 00:38:07 -0800 2013</started_at>
+  <read_at></read_at>
+  <date_added>Wed Jan 30 00:38:07 -0800 2013</date_added>
+  <date_updated>Wed Jan 30 00:38:07 -0800 2013</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[https://www.goodreads.com/review/show/521341810]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/521341810]]></link>
+    <owned>0</owned>
+</review>
+
+</reviews>
+
+</GoodreadsResponse>
