@@ -17,90 +17,43 @@
         <body>
             <div id="gradient"></div>
             <svg></svg>
+
             <div id="shelf" class="containerOuter">
                 <div class="containerInner">
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1387976467m/662588.jpg" alt="Book title " title=""  /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1320665164m/305768.jpg" alt="Book title " title=""/></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1327942676m/23919.jpg" alt="Book title " title=""/></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1333244682m/13243831.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1309916812m/102955.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1372054310m/13107402.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1424200139m/296884.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1375674826m/17277845.jpg" alt="Book title " title=""/></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1424200108m/298471.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1424200099m/298472.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1310230073m/9866153.jpg" alt="Book title " title=""/></a>
-                </div>
-                 <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1320665164m/305768.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1327942676m/23919.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1333244682m/13243831.jpg" alt="Book title " title="" /></a>
-                </div>
-                <div class="book">
-                    <a href="#">
-                    <!-- <p>Reall long Book title</p> -->
-                    <img src="https://d.gr-assets.com/books/1309916812m/102955.jpg" alt="Book title " title="" /></a>
-                </div>
+               
                 </div><!--inner container-->
             </div><!-- outer container-->
+
+            <script>
+            
+            d3.json("xslt/DiannasBooks.json",function(error,data){
+                 if (error) {  //If error is not null, something went wrong.
+                    console.log(error);  //Log the error.
+                    } else {      //If no error, the file loaded correctly. Yay!
+                      console.log(data);   //Log the data.
+                      //Include other code to execute after successful file load here
+                    
+                     var divContainer = d3.select(".containerInner")
+                                        ;
+                    var myBooks = divContainer.selectAll(".book")
+                        .data(data);
+                    console.log("number of books: " + data.length);
+                    var container_width = 90 * data.length;
+                    $(".containerInner").css("width", container_width);
+                    var newBookLink = myBooks.enter()
+                        .append("div")
+                                        .attr("class", "book")
+                        .append("a")
+                        .attr("href", "#");
+                    newBookLink.append("img")
+                        .attr("src", function(d) {
+                                return d.image_url;})
+                        .attr("alt", function(d) {return d.title;})
+                        .attr("title", function(d) {return d.title;})
+                    }
+            });
+
+            </script>
             <script src="js/functions.js"></script>
         </body>
     </html>

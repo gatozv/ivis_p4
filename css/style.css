@@ -167,11 +167,11 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00264c', end
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
-    background: rgba(0, 0 , 0 ,0.3);
+    /*background: rgba(0, 0 , 0 ,0.3);*/
     /*height: 148px;*/
 }
 .containerInner {
-    width: 10000px;
+    width: 100000px;
 }
 .book {
     float: left;
