@@ -13,6 +13,11 @@ function importFriends2 () {
 		var friendInfo = eval('(' + friendData + ')');
 		
 		friends[i]["books"] = friendInfo
+
+		xmlFileURI = "./xslt/compare_"+friends[i].id+".xml";
+		friendData = parseXML(xmlFileURI,"./xslt/FriendCompareBooksTrafo.xslt");
+		friendInfo = eval('(' + friendData + ')');
+		friends[i]["common_books"] = friendInfo;
 	/*	for (var ii in friendInfo) {
 			$.extend(friends[i], friendInfo[ii]);
 		}*/

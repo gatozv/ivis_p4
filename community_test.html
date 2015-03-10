@@ -34,6 +34,7 @@
   <script>
   
   var initFriends = importFriends2();
+  //console.log(initFriends)
  
   
   var node_data  = initFriends.map(function(d,i,a){
@@ -76,7 +77,7 @@
 	  	
 	  	if(inter != 0 ){
 	  		
-	  		//inter = Math.pow(inter,2)/1000
+	  		//inter = Math.pow(inter,2)/1000;
 	  		
 		  	console.log("comparing " +d.name + " to "+ e.name + " inter " + inter)
 	 	
@@ -94,6 +95,8 @@ console.log('Input Edge Data', edge_data);
 var community = jLouvain().nodes(node_data).edges(edge_data);  
 
 console.log(community)
+
+
 
 //Drawing code
 var width = 600,
@@ -147,6 +150,14 @@ force.nodes(original_node_data)
     var community_assignment_result = community();
   
     var node_ids = Object.keys(community_assignment_result);
+
+    node_ids.forEach(function(d,i,a){
+         console.log("d "+d + " " +community_assignment_result[d]);
+         initFriends[d]["community"] = community_assignment_result[d];
+    }); 
+
+    
+
     
     console.log('Resulting Community Data', community_assignment_result);
     var max_community_number = 0;
@@ -154,11 +165,23 @@ force.nodes(original_node_data)
       original_node_data[d].community = community_assignment_result[d];
       max_community_number = max_community_number < community_assignment_result[d] ? community_assignment_result[d]: max_community_number;
     });
-
+    console.log(original_node_data);
     console.log("max community number "+ max_community_number)
-
+    console.log(initFriends) // This initfriends has the list of all the friends with the community to which they belong to. 
+    initFriends.forEach(function(d,i,a){
+      var filteredFriends = initFriends.filter(function( object ) {
+        return object.community == d.community
+      })
+      
+    if(filteredFriends.length == 1){
+      d.community = -1;
+    }
+  })
+    var nested_friends = d3.nest()
+      .key(function(d) { return d.community; })
+      .entries(initFriends);
+    console.log(nested_friends);
     var color = d3.scale.category20().domain(d3.range([0, max_community_number]));
-
     d3.selectAll('.node')
       .data(original_node_data)
       .style('fill', function(d){ return color(d.community);})
