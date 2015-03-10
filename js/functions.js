@@ -1,7 +1,7 @@
 
 //initialize variables
 var svgWidth = window.outerWidth;
-var svgHeight= window.outerHeight;
+var svgHeight= window.outerHeight-214;
 var svgContainer = d3.select("svg") //create container
                      // .append("svg")
                      .attr("width", svgWidth )
@@ -52,8 +52,8 @@ var friendsTotal = friends.length;
 var maxCommonBooks = maxOfFriendsList(friends, "commonBooks");
 
 //origins of the graph 
-var xOrigin = window.outerWidth/2;
-var yOrigin = window.outerHeight/2;
+var xOrigin = svgWidth/2;
+var yOrigin = svgHeight/2;
 
 var distanceFromMeMax = 500;
 //creates a scale for the number of books
