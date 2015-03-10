@@ -28,7 +28,7 @@
             
             d3.json("xslt/DiannasBooks.json",function(error,data){
                  if (error) {  //If error is not null, something went wrong.
-                    console.log(error);  //Log the error.
+                    console.log("error:" + error);  //Log the error.
                     } else {      //If no error, the file loaded correctly. Yay!
                       console.log(data);   //Log the data.
                       //Include other code to execute after successful file load here
