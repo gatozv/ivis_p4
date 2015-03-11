@@ -57,7 +57,8 @@
 
  				
  				
-  console.log(initFriends[0].books) 
+  console.log(initFriends[0].books)
+  console.log(initFriends) 
 
   var edge_data = [];
   initFriends.forEach(function(d,i,a){
@@ -81,9 +82,10 @@
 	  		
 		  	console.log("comparing " +d.name + " to "+ e.name + " inter " + inter)
 	 	
-		  	edge_data.push({"source":i,"target":j,"weight":Math.random()*100})
+		  	//edge_data.push({"source":i,"target":j,"weight":Math.random()*100})
+        //edge_data.push({"source":i,"target":j,"weight":inter})
 	  	}
-	  	
+	  	edge_data.push({"source":i,"target":j,"weight":inter+1})
 	  	
   	}
   
@@ -109,7 +111,7 @@ var weight_scale = d3.scale.linear().domain([0, max_weight]).range([1,5]);
 
 var force = d3.layout.force()
               .charge(-50)
-              .linkDistance(50)
+              .linkDistance(250)
               .size([width, height]);
 
 var svg = d3.select("body").append("svg")
