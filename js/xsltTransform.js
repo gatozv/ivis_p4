@@ -9,7 +9,7 @@ function loadXMLDoc (filename) {
 	try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
 		xhttp.send("");
 		return xhttp.responseXML;
-	}
+}
 
 function parseXML(xmlFile, xslFile) {
 	xml = loadXMLDoc(xmlFile);

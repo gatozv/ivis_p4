@@ -1,5 +1,5 @@
 function importFriends2 () {
-	var data = parseXML("./xslt/friends.xml","./xslt/GoodReadsTrafo.xslt");
+	var data = parseXML("./xslt/allDataDiana.xml","./xslt/GoodReadsTrafo.xslt");
 	var friends = eval('(' + data + ')');
 	//console.log(friends);
 	for (var i in friends) {
