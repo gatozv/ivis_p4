@@ -20,6 +20,8 @@
 		<xsl:value-of select="./id/."/>
 		<xsl:text>", "name":"</xsl:text>
 		<xsl:value-of select="./name/."/>
+		<xsl:text>", "image_url":"</xsl:text>
+		<xsl:value-of select="./image_url/."/>
 		<xsl:text>"}</xsl:text>
 		<xsl:if test="position() != last()">
 			<xsl:text>, 

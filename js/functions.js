@@ -35,6 +35,8 @@ for (var i = 0; i <initFriends.length ; i++) {
   friend["name"] = initFriends[i].name;
   friend["totalBooks"] = initFriends[i].their_total_books_count;
   friend["commonBooks"] = initFriends[i].common_count;
+  friend["image"] = initFriends[i].image_url;
+  console.log(friend["image"]);
   friends.push(friend);
 };
 
@@ -71,7 +73,36 @@ svgContainer.selectAll("circle")
             .attr()
             .style("opacity","0")
             .attr("class", "friend")
-            .attr("fill", "url(#grad1)");
+            .attr("fill", "url(#grad1)")
+            .on("click", function(d) {
+
+//Get this bar's x/y values, then augment for the tooltip
+var xPosition = parseFloat(d3.select(this).attr("x")) ;
+var yPosition = parseFloat(d3.select(this).attr("y")) ;
+
+//Update the tooltip position and value
+d3.select("#tooltip")
+  .style("left", xPosition + "px")
+  .style("top", yPosition + "px")
+  .select("#name")
+  .text(d["name"]);
+d3.select("#tooltip")
+  .select("#avatar")
+  .attr("src", d["image"]);
+d3.select("#tooltip")
+  .select("#total")
+  .text(d["totalBooks"]);
+d3.select("#tooltip")
+  .select("#common")
+  .text(d["commonBooks"]);
+d3.select("#tooltip")
+  .select("#closeFriend")
+  .text(d["name"]);
+
+//Show the tooltip
+d3.select("#tooltip").classed("hidden", false);
+
+});
 //show the circles one at a time 
 var circles = svgContainer.selectAll("circle");
 circles[0] = d3.shuffle(circles[0]);

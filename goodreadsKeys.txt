@@ -1,0 +1,11 @@
+goodreads api key 
+
+Api Key
+Here is your developer key for using the Goodreads API. This key must be appended to every request using the form variable 'key'. (If you're using our write API, you'll need your secret too.) 
+
+key: iSAfjzMo6QHWifwOfCQvQ
+secret: XRCIVEsXshWdT2NwKGqHoQ6e8qzC1YclV45Zgp2GADg
+
+curl "https://www.goodreads.com/search.xml?key=iSAfjzMo6QHWifwOfCQvQ&q=Ender%27s+Game"
+
+https://www.goodreads.com/friend/user/40484598?format=xml&key=iSAfjzMo6QHWifwOfCQvQ&q
