@@ -208,13 +208,16 @@ p{
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.3);
-    padding: 0 1em 0 0 ;
+    padding:  1em ;
 }
 #tooltip section, img{
     float: left;
 }
 #tooltip img{
-    margin: 1em;
-    width: 98px;
-    height: 148px;
+    margin-right: 1em;
+   /* width: 98px;
+    height: 148px;*/
+}
+.hidden{
+    display: none;
 }
