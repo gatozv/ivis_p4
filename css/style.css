@@ -218,3 +218,11 @@ p{
     width: 98px;
     height: 148px;
 }
+
+#logo{
+  position: fixed;
+  top: 1.5em;
+  left: 1.5em;
+  width:120px;
+  height:120px
+}
