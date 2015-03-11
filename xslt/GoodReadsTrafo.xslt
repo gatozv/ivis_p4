@@ -6,17 +6,13 @@
 		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
 	
 	<xsl:template match="/">
-		<xsl:apply-templates select="GoodreadsResponse"/>
+		[<xsl:apply-templates select="AllGoodreadsData"/>]
 	</xsl:template>
 
-	<xsl:template match="GoodreadsResponse">
-		<xsl:apply-templates select="friends"/>
+	<xsl:template match="AllGoodreadsData">
+		<xsl:apply-templates select="GoodreadsResponse/friends/user"/>
 	</xsl:template>
-	
-	<xsl:template match="friends">
-		[<xsl:apply-templates select="user"/>]
-	</xsl:template>
-	
+
 	<xsl:template match="user">
 		<xsl:text>{"id":"</xsl:text>
 		<xsl:value-of select="./id/."/>
@@ -24,7 +20,8 @@
 		<xsl:value-of select="./name/."/>
 		<xsl:text>"}</xsl:text>
 		<xsl:if test="position() != last()">
-			<xsl:text>, </xsl:text>
+			<xsl:text>, 
+			</xsl:text>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>
