@@ -1,7 +1,7 @@
 
 //initialize variables
 var svgWidth = window.outerWidth;
-var svgHeight= window.outerHeight-214;
+var svgHeight= window.outerHeight-100;
 var svgContainer = d3.select("svg") //create container
                      // .append("svg")
                      .attr("width", svgWidth )

@@ -52,8 +52,8 @@
                     var myBooks = divContainer.selectAll(".book")
                         .data(data);
                     console.log("number of books: " + data.length);
-                    var container_width = 90 * data.length;
-                    $(".containerInner").css("width", container_width);
+                    var container_height = 117 * data.length;
+                    $(".containerInner").css("height", container_height);
                     var newBookLink = myBooks.enter()
                         .append("div")
                                         .attr("class", "book")
