@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<h1>WORKS</h1>
+
+<p id="status">status</p>
+
+<script src="js/goodreadsDataFetches.js"></script>
+<script>
+
+var svgWidth = 600
+var svgHeight = 50
+
+
+var svgContainer = d3.select("body") //create container
+                     .append("svg")
+                     .attr("width", svgWidth)
+                     .attr("height",svgHeight)
+                     
+svgContainer.app
+
+svgContainer.append("rect")
+            .attr("transform", "translate(" + svgWidth/2 + "," + svgHeight/2 + ")")
+            .attr("x", -svgWidth/2)
+            .attr("y", -svgHeight/2)
+            .attr("width",svgWidth)
+            .attr("height", svgHeight)
+            .style("fill","white")
+            .style("stroke-width",0.5)
+            .style("stroke","#555555")
+            
+var progress = svgContainer.append("rect")
+            .attr("transform", "translate(" + svgWidth/2 + "," + svgHeight/2 + ")")
+            .attr("x", -svgWidth/2)
+            .attr("y", -svgHeight/2)
+            .attr("width",0)
+            .attr("height", svgHeight)
+            .style("fill","blue")
+            //.style("stroke-width",0.5)
+            //.style("stroke","#555555")
+
+goodreadsDataFetches.statusUpdate = function(percentage,state){
+	console.log("percentage " + percentage +" state "+ state)
+	var newwidht = (percentage/100*svgWidth);
+
+	progress.attr("width", newwidht);
+}
+
+goodreadsDataFetches.finished = function(data){
+	console.log("done")
+	addXMLDownload("allData", data)
+} 
+
+goodreadsDataFetches.start()
+
+
+function addXMLDownload(filename, data){
+	window.URL = window.webkitURL || window.URL;
+
+		var contentType = 'application/xml';
+
+		var xmlFile = new Blob([data], {type: contentType});
+
+		var a = document.createElement('a');
+		a.download = filename+'.xml';
+		a.href = window.URL.createObjectURL(xmlFile);
+		a.textContent = 'Download '+filename+' XML';
+
+		a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
+
+		document.body.appendChild(a);
+		document.body.appendChild(document.createElement('br'));
+}
+
+
+</script>
+
+</body>
+</html>
