@@ -1,8 +1,18 @@
+@charset"utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('Bariol_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     font-size: 15px;
+    font-family: Bariol, Roboto, Helvetica, sans-serif;
 }
 body {
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Bariol, Roboto, Helvetica, sans-serif;
     font-size: 15px;
     height: 100%;
     width: 100%;
@@ -152,6 +162,18 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00264c', end
     opacity: 0;
 }
 }
+
+h2{
+    color: #F2F1EF;
+    text-align: left;
+    font-size: 2rem; 
+    margin: 0.5em 0 0.8em 0;
+}
+p{
+    color: #F2F1EF;
+    text-align: left;
+    margin: 0.5em 0;
+}
 .friend {
     /*fill: #F2F1EF;*/
 }
@@ -180,4 +202,19 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00264c', end
 .book img {
     width: 80px;
     height: 107px;
+}
+
+#tooltip{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0 1em 0 0 ;
+}
+#tooltip section, img{
+    float: left;
+}
+#tooltip img{
+    margin: 1em;
+    width: 98px;
+    height: 148px;
 }
