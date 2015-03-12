@@ -31,7 +31,7 @@
 		</xsl:text>
 		<xsl:text>"books": [
 		</xsl:text>
-		<xsl:apply-templates select="../../../allBooks/books[@userId = $userId]/GoodreadsResponse/reviews/review" />
+		<xsl:apply-templates select="../../../../allBooks/books[@userId = $userId]/GoodreadsResponse/reviews/review/shelves/shelf[@name='read']" />
 		<xsl:text>],</xsl:text>
 	</xsl:template>
 
@@ -41,14 +41,49 @@
 		<xsl:text>"id": "</xsl:text>
 		<xsl:value-of select="$userId" />
 		<xsl:text>",
+		"image_url": "</xsl:text>
+		<xsl:value-of select="./image_url" />
+		<xsl:text>",
 		"name": "</xsl:text>
 		<xsl:value-of select="./name" />
 		<xsl:text>",
 		</xsl:text>
 		<xsl:text>"books": [
 		</xsl:text>
-		<xsl:apply-templates select="../../../../allBooks/books[@userId = $userId]/GoodreadsResponse/reviews/review" />
+		<xsl:apply-templates select="../../../../allBooks/books[@userId = $userId]/GoodreadsResponse/reviews/review/shelves/shelf[@name='read']" />
 		<xsl:text>]}</xsl:text>
+		<xsl:if test="position() != last()">
+			<xsl:text>, 
+			</xsl:text>
+		</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="shelf">
+		<xsl:text>{"date_added": "</xsl:text>
+		<xsl:value-of select="../../date_added/." />
+		<xsl:text>",</xsl:text>
+		<xsl:apply-templates select="../../book"></xsl:apply-templates>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() != last()">
+			<xsl:text>, 
+			</xsl:text>
+		</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="book">
+		<xsl:text>"title": "</xsl:text>
+		<xsl:apply-templates select="./title" />
+		<xsl:text>", "id": "</xsl:text>
+		<xsl:value-of select="./id/." />
+		<xsl:text>", "image_url": "</xsl:text>
+		<xsl:value-of select="./image_url/." />
+		<xsl:text>", "author": "</xsl:text>
+		<xsl:value-of select="./authors/descendant::author[1]/name" />
+		<xsl:text>", "average_rating": "</xsl:text>
+		<xsl:value-of select="./average_rating/." />
+		<xsl:text>", "rating": "</xsl:text>
+		<xsl:value-of select="../rating/." />
+		<xsl:text>"</xsl:text>
 		<xsl:if test="position() != last()">
 			<xsl:text>, 
 			</xsl:text>
