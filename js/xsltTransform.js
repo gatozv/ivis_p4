@@ -32,6 +32,9 @@ function parseXML(xmlFile, xslFile) {
 
 function parseXMLString(xmlString, xslFile) {
 	xsl = loadXMLDoc(xslFile);
+	console.log(xsl)
+	var parser = new DOMParser()
+	var doc = parser.parseFromString(xmlString, "text/xml");
 	// code for IE
 	if (window.ActiveXObject || xhttp.responseType == "msxml-document")
 	{
@@ -42,7 +45,8 @@ function parseXMLString(xmlString, xslFile) {
 	{
 		xsltProcessor = new XSLTProcessor();
 		xsltProcessor.importStylesheet(xsl);
-		resultDocument = xsltProcessor.transformToFragment(xmlString, document);
+		resultDocument = xsltProcessor.transformToFragment(doc, document);
+		console.log(resultDocument);
 		var xmlAsString = new XMLSerializer().serializeToString( resultDocument );
 		return xmlAsString;
 	}

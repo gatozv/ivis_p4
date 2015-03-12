@@ -80,7 +80,7 @@ function GoodReadsDataFetches () {
 		
 		setTimeout(function(){
 			self.statusUpdate(100, "done");
-			$.ajax('xslt/allDataDiana.xml', {
+			$.ajax('xslt/allDataDiana2.xml', {
 			  dataType: 'text',
 		      success: function(data) {
 		        // console.log("success")
