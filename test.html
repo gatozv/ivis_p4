@@ -57,11 +57,7 @@ goodreadsDataFetches.statusUpdate = function(percentage,state){
 goodreadsDataFetches.finished = function(data){
 	console.log("done")
 	addXMLDownload("allData", data)
-	//console.log("before conversion")
-	//console.log(data)
-	//var jsonData = parseXMLString('xslt/allDataDiana2.xml',"./xslt/AllDataTrafo.xslt")
 	var jsonData = parseXMLString(data,"./xslt/AllDataTrafo.xslt")
-	//console.log("after conversion")
 	console.log(jsonData)
 	document.getElementById("status").innerHTML = "done"
 } 

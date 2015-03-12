@@ -4,11 +4,11 @@ function loadXMLDoc (filename) {
 	} else {
 		xhttp = new XMLHttpRequest();
 	}
-	
+	xhttp.overrideMimeType('text/xml');
 	xhttp.open("GET", filename, false);
-	try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-		xhttp.send("");
-		return xhttp.responseXML;
+	xhttp.send(null);
+	xmlDoc = xhttp.responseXML;
+	return xmlDoc;
 }
 
 function parseXML(xmlFile, xslFile) {
