@@ -129,49 +129,16 @@ stars.forEach(function(entries, index){
 		}while(!endPath);
 	}
 })
-//console.log(paths)
-//INTENTO DE ANIMACION!!! BORRAR ESTO PA ARREGLAR
-// var svg2 = d3.select(".container")
-// 						.append("svg")
-// 						.attr("width", w)
-// 						.attr("height", h);
-// for(var i=0; i<paths.length;i++){
 
-// var myPath = [];
-// paths[i].forEach(function(entries){
-// 	myPath.push(stars[entries]);
-// })
-
-// var lineGraph = svg2.append("path")
-//                     .attr("d", lineFunction(myPath))
-//                     .attr("stroke", "blue")
-//                     .attr("stroke-width", 2)
-//                     .attr("fill", "none");
-// var totalLength = lineGraph.node().getTotalLength();
-
-//     lineGraph
-//       .attr("stroke-dasharray", totalLength + " " + totalLength)
-//       .attr("stroke-dashoffset", totalLength)
-//       .transition()
-//         .duration(2000)
-//         .ease("linear")
-//         .attr("stroke-dashoffset", 0);
-// }
-//TERMINO INTENTO DE ANIMACION
-//console.log(myPath)
-//console.log("paths", paths);
 stars[thisStar].connected=true;
-////console.log("connections",connections)
 //************* end of first pass
 
 //*************second pass
 if(paths.length>1){
 	paths.sort(function(a,b){return d3.descending(a.length, b.length);});
-	////console.log(paths);
 	do{
 		var distBetPaths = findDistances(paths[1],paths[0]);
 		distBetPaths.sort(function(a,b){return d3.ascending(a.distance, b.distance);});
-		//console.log(distBetPaths)
 		for(var i=0; i<distBetPaths.length; i++){
 			var currentIndexS1 = distBetPaths[i].s1;
 			var currentIndexS2 = distBetPaths[i].s2;
@@ -184,7 +151,6 @@ if(paths.length>1){
 			}
 			var intersection2 = findIntersection(series2, connections);
 			if(!intersection2){
-				//console.log("i am connecting "+currentIndexS1+" and "+currentIndexS2)
 				d3.select(".container").select("svg")
 				.append("line")
 				.attr("x1", series2.x1)
@@ -194,11 +160,8 @@ if(paths.length>1){
 			    .attr("stroke","white");
 			    
 			    connections.push(series2);
-			    //console.log("connections",connections)
 			    paths[0]=paths[0].concat(paths[1]);
 			    paths.splice(1,1)
-			    //currentPath.push(thisStar);
-			    //thisStar = closestStar;
 			    break;
 			}else{
 				if(i==distBetPaths.length-1){
@@ -220,11 +183,9 @@ if(paths.length>1){
 				    .attr("y2", series2.y2)
 				    .attr("stroke","white");
 				    connections.push(series2);
-				    //console.log("connections",connections)
 				    paths[0]=paths[0].concat(paths[1]);
 				    paths.splice(1,1)
 				}
-				//console.log("intersection between "+currentIndexS1+" and "+currentIndexS2)
 			}
 		}
 
@@ -248,7 +209,6 @@ function findDistances (minorArray, majorArray){
 			distances.push(newDistance);
 		}
 	}
-	//console.log(distances);
 	return distances;
 }
 
@@ -256,7 +216,6 @@ function findIntersection (currentLine, lineArray){
 	var theyIntersect = false;
 	for(var k=0; k<lineArray.length; k++){
 		var findIntersect = lineIntersect(lineArray[k].x1, lineArray[k].y1, lineArray[k].x2, lineArray[k].y2, currentLine.x1, currentLine.y1, currentLine.x2, currentLine.y2)
-		////console.log(findIntersect)
 		if(findIntersect){
 			theyIntersect = true;
 			break;
@@ -272,14 +231,12 @@ function findClosestStar (indexOfActual, arrayOfStars){
 	for(var j=0; j<arrayOfStars.length; j++){
 		if(indexOfActual!=j && !arrayOfStars[j].connected){
 			var distance_actual = lineLength(arrayOfStars[indexOfActual], arrayOfStars[j]);
-			////console.log("len from "+i+" to "+j+" = "+starLength);
 			if(distance_actual<shortest_distance){
 				indexOfStar = j;
 				shortest_distance = distance_actual;
 			}
 		}
 	}
-	////console.log("from star "+indexOfActual+" to star "+ indexOfStar +" distance: "+ shortest_distance);
 	return indexOfStar;
 }
 
