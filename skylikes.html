@@ -22,20 +22,20 @@
             <div id="tooltip" class="hidden">
                 <img id="avatar" src="https://d.gr-assets.com/users/1424464367p3/40485151.jpg" />
                 <section>
-                <h2><span id="name">Willie Laka</span></h2>
-                <p>Total books read: <span id="total">460</span></p>
-                <p>Books in common: <span id="common">19</span></p>
+                <h2><span id="name"></span></h2>
+                <p>Total books read: <span id="total"></span></p>
+                <p>Books in common: <span id="common"></span></p>
                 <!-- <p>Most read genre: <span>fiction </span></p> -->
-                <p>Closest star: <span id="closeFriend">Andres Sierra Sierra</span></p>
+                <p>Closest star: <span id="closeFriend"></span></p>
                 </section>
             </div>
             <div id="bookTooltip" class="hidden" >
-                <h2><span id="title">Fight Club</span></h2>
-                <p>Author: <span id="author">Chuck Palanihuk</span></p>
-                <p>Friends who read: <span id="noFriends">19</span></p>
+                <h2><span id="title"></span></h2>
+                <p>Author: <span id="author"></span></p>
+                <p>Friends who read: <span id="noFriends"></span></p>
                 <!-- <p>Most read genre: <span>fiction </span></p> -->
-                <p>Your rating: <span id="rating">5</span></p>
-                <p>Goodreads rating: <span id="goodReads">3.4</span></p>
+                <p>Your rating: <span id="rating"></span></p>
+                <p>Goodreads rating: <span id="goodReads"></span></p>
                 
             </div>
 
@@ -46,7 +46,12 @@
             </div><!-- outer container-->
 
             <script>
-            
+            d3.select("#tooltip").on("click", function() {
+                //Hide the tooltip
+                d3.select("#tooltip").classed("hidden", true);  
+                      
+                })
+            var lastSelected ;
             d3.json("xslt/DiannasBooks.json",function(error,data){
                  if (error) {  //If error is not null, something went wrong.
                     console.log("error:" + error);  //Log the error.
@@ -65,38 +70,53 @@
                     var newBookLink = myBooks.enter()
                         .append("div")
                         .attr("class", "book")
+
                         .append("a")
                         .attr("href", "#");
                     newBookLink.append("img")
+                        .attr("id", function(d, i){return "b" + i})
                         .attr("src", function(d) {
                                 return d.image_url;})
                         .attr("alt", function(d) {return d.title;})
                         .attr("title", function(d) {return d.title;})
                     .on("click", function(d, i) {
-                        //Get this bar's x/y values, then augment for the tooltip  
-                        var yPosition = parseFloat(d3.select(this).attr("y")) ;
-                        console.log(yPosition);
+                       var $this = $(this);
+                       console.log("current:" + i);
+                       console.log("last selected:" + lastSelected);
 
-                        //Update the tooltip position and value
-                        d3.select("#bookTooltip")
-                          .style("top", yPosition + "px")
-                          .select("#title")
-                          .text(d.title);
-                        d3.select("#bookTooltip")
-                          .select("#author")
-                          .text(d.author);
-                        // d3.select("#bookTooltip")
-                        //   .select("#noFriends")
-                        //   .text(d["commonBooks"]);
-                        // d3.select("#bookTooltip")
-                        //   .select("#rating")
-                        //   .text(d["name"]);
-                        // d3.select("#bookTooltip")
-                        //   .select("#goodReads")
-                        //   .text(d["name"]);
+                        if (i===lastSelected) {
+                            // already been clicked once, hide it
+                            d3.select(this).style("background", "rgba(242, 241, 239, 0)")
+                            d3.select("#bookTooltip").classed("hidden", true);
+                        }else {
+                            d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
+                            lastSelected = i;
+                            //Get this bar's x/y values, then augment for the tooltip  
+                            // var yPosition = d3.select(this).clientY ;
+                            // console.log(yPosition);
 
-                        //Show the tooltip
-                        d3.select("#bookTooltip").classed("hidden", false);
+                            //Update the tooltip position and value
+                            d3.select("#bookTooltip")
+                              // .style("top", window.outerHeight - yPosition + "px")
+                              .select("#title")
+                              .text(d.title);
+                            d3.select("#bookTooltip")
+                              .select("#author")
+                              .text(d.author);
+                            // d3.select("#bookTooltip")
+                            //   .select("#noFriends")
+                            //   .text(d["commonBooks"]);
+                            // d3.select("#bookTooltip")
+                            //   .select("#rating")
+                            //   .text(d["name"]);
+                            // d3.select("#bookTooltip")
+                            //   .select("#goodReads")
+                            //   .text(d["name"]);
+                            d3.select(this).style("background", "rgba(242, 241, 239, 0.2)")
+                            //Show the tooltip
+                            d3.select("#bookTooltip").classed("hidden", false);
+                            lastSelected = i;
+                        }//end else
 
                       });
 
