@@ -32,6 +32,7 @@ function GoodReadsDataTransformations () {
 			return {
 				"id":a.id,
 				"name":a.name,
+				"image_url":a.image_url,
 				"totalBooks":a.books.length,
 				"community" : communities[i].community,
 				"commonBooks":compareBooks(dataset.books,a.books)
