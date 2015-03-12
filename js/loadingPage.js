@@ -43,8 +43,9 @@ goodreadsDataFetches.finished = function(data) {
     document.getElementById("status").innerHTML = "done"
     goodreadsDataTransformations.setData(jsonData)
     var allFriends = goodreadsDataTransformations.allFriends()
-    console.log("allfriends")
-    console.log(allFriends)
+    console.log("allfriends");
+    console.log(allFriends);
+    drawStars(allFriends);
     /*
                 allFriends.forEach(function(d,i){
                     console.log("id "+ i +" commonwithme " + d.commonBooks + " community "+d.community+ " totalbooks "+d.totalBooks )

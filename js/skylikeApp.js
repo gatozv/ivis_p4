@@ -1,4 +1,4 @@
-
+function drawStars(friends){
 //initialize variables
 var svgWidth = window.outerWidth;
 var svgHeight= window.outerHeight;
@@ -24,20 +24,21 @@ radialGradient.append("stop")
               .style("stop-color","#F2F1EF")
               .style("stop-opacity",0)
 
-var initFriends = importFriends();
-var friends = [];
+// var initFriends = allFriends;
+// var friends = [];
 
-//random friends generator
-for (var i = 0; i <initFriends.length ; i++) {
+
+// for (var i = 0; i <allFriends.length ; i++) {
   
-  var friend = {};
-  friend["id"] = initFriends[i].id;
-  friend["name"] = initFriends[i].name;
-  friend["totalBooks"] = initFriends[i].their_total_books_count;
-  friend["commonBooks"] = initFriends[i].common_count;
-  friend["image"] = initFriends[i].image_url;
-  friends.push(friend);
-};
+//   var friend = {};
+//   friend["id"] = allFriends[i].id;
+//   friend["name"] = allFriends[i].name;
+//   friend["totalBooks"] = allFriends[i].totalBooks;
+//   friend["commonBooks"] = allFriends[i].commonBooks;
+//   friend["image"] = allFriends[i].image_url;
+//   friends.push(friend);
+// };
+
 
 //gets the maximum of any of the fields in friends
 function maxOfFriendsList(friendsList, attr){
@@ -216,3 +217,4 @@ d3.select("#tooltip").on("click", function() {
 
                     }
             });
+}//end draw stars
