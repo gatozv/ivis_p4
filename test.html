@@ -3,11 +3,16 @@
 <head>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<style> 
+		
+			body { text-align: center; }
+		
+</style>
 </head>
 <body>
-<h1>WORKS</h1>
+<h1>Skylikes</h1>
 
-<p id="status">status</p>
+<p id="status">hello</p>
 
 <script src="js/goodreadsDataFetches.js"></script>
 <script>
@@ -20,8 +25,6 @@ var svgContainer = d3.select("body") //create container
                      .append("svg")
                      .attr("width", svgWidth)
                      .attr("height",svgHeight)
-                     
-svgContainer.app
 
 svgContainer.append("rect")
             .attr("transform", "translate(" + svgWidth/2 + "," + svgHeight/2 + ")")
@@ -46,17 +49,35 @@ var progress = svgContainer.append("rect")
 goodreadsDataFetches.statusUpdate = function(percentage,state){
 	console.log("percentage " + percentage +" state "+ state)
 	var newwidht = (percentage/100*svgWidth);
-
 	progress.attr("width", newwidht);
+	
+	document.getElementById("status").innerHTML = "state: "+ state + " percentage: "+percentage +"%"
 }
 
 goodreadsDataFetches.finished = function(data){
 	console.log("done")
 	addXMLDownload("allData", data)
+	document.getElementById("status").innerHTML = "done"
+
 } 
 
-goodreadsDataFetches.start()
+var isUsingTestingDataset = getParameterByName("testingData") == "1"
 
+if(isUsingTestingDataset){
+	console.log("startWithTestingData")
+	goodreadsDataFetches.startWithTestingData()
+}else{
+	console.log("start realData!")
+	goodreadsDataFetches.start()
+}
+
+//http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
 function addXMLDownload(filename, data){
 	window.URL = window.webkitURL || window.URL;
@@ -71,9 +92,9 @@ function addXMLDownload(filename, data){
 		a.textContent = 'Download '+filename+' XML';
 
 		a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
-
-		document.body.appendChild(a);
+		
 		document.body.appendChild(document.createElement('br'));
+		document.body.appendChild(a);
 }
 
 

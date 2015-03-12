@@ -35,13 +35,70 @@ function GoodReadsDataFetches () {
 		
 		self.statusUpdate(0, "loadingMe")
 	}
+	
+	this.startWithTestingData = function(){
+		self.statusUpdate(0, "loadingMe")
+		setTimeout(function(){
+			self.statusUpdate(0, "loadingFriends")
+		}, 100);
+		
+		setTimeout(function(){
+			self.statusUpdate(0, "loadingBookLists")
+		}, 3000);
+		
+		setTimeout(function(){
+			self.statusUpdate(10, "loadingBookLists")
+		}, 4000);
+		
+		setTimeout(function(){
+			self.statusUpdate(20, "loadingBookLists")
+		}, 5000);
+		setTimeout(function(){
+			self.statusUpdate(30, "loadingBookLists")
+		}, 6000);
+		setTimeout(function(){
+			self.statusUpdate(40, "loadingBookLists")
+		}, 7000);
+		setTimeout(function(){
+			self.statusUpdate(50, "loadingBookLists")
+		}, 8000);
+		setTimeout(function(){
+			self.statusUpdate(60, "loadingBookLists")
+		}, 9000);
+		setTimeout(function(){
+			self.statusUpdate(70, "loadingBookLists")
+		}, 10000);
+		setTimeout(function(){
+			self.statusUpdate(80, "loadingBookLists")
+		}, 11000);
+		setTimeout(function(){
+			self.statusUpdate(90, "loadingBookLists")
+		}, 12000);
+		setTimeout(function(){
+			self.statusUpdate(100, "loadingBookLists")
+		}, 13000);
+		
+		setTimeout(function(){
+			self.statusUpdate(100, "done");
+			$.ajax('xslt/allDataDiana.xml', {
+			  dataType: 'text',
+		      success: function(data) {
+		        // console.log("success")
+		         self.finished(data)
+		      },
+		      error: function(data, errorThrown) {
+		        // console.log("failure"+errorThrown)
+		      }
+		   });
+			
+		}, 13300);
+		
+	}
 }
 
 var goodreadsDataFetches = new GoodReadsDataFetches ();
 
 //document.getElementById("status").innerHTML = "Getting friends list";
-
-
 
 function fetchNext(){
 
