@@ -29,6 +29,15 @@
                 <p>Closest star: <span id="closeFriend">Andres Sierra Sierra</span></p>
                 </section>
             </div>
+            <div id="bookTooltip" class="hidden" >
+                <h2><span id="title">Fight Club</span></h2>
+                <p>Author: <span id="author">Chuck Palanihuk</span></p>
+                <p>Friends who read: <span id="noFriends">19</span></p>
+                <!-- <p>Most read genre: <span>fiction </span></p> -->
+                <p>Your rating: <span id="rating">5</span></p>
+                <p>Goodreads rating: <span id="goodReads">3.4</span></p>
+                
+            </div>
 
             <div id="shelf" class="containerOuter">
                 <div class="containerInner">
@@ -46,9 +55,8 @@
                       //Include other code to execute after successful file load here
                    
                     data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
-                    console.log(data); 
-                     var divContainer = d3.select(".containerInner")
-                                        ;
+
+                    var divContainer = d3.select(".containerInner");
                     var myBooks = divContainer.selectAll(".book")
                         .data(data);
                     console.log("number of books: " + data.length);
@@ -56,7 +64,7 @@
                     $(".containerInner").css("height", container_height);
                     var newBookLink = myBooks.enter()
                         .append("div")
-                                        .attr("class", "book")
+                        .attr("class", "book")
                         .append("a")
                         .attr("href", "#");
                     newBookLink.append("img")
@@ -64,6 +72,34 @@
                                 return d.image_url;})
                         .attr("alt", function(d) {return d.title;})
                         .attr("title", function(d) {return d.title;})
+                    .on("click", function(d, i) {
+                        //Get this bar's x/y values, then augment for the tooltip  
+                        var yPosition = parseFloat(d3.select(this).attr("y")) ;
+                        console.log(yPosition);
+
+                        //Update the tooltip position and value
+                        d3.select("#bookTooltip")
+                          .style("top", yPosition + "px")
+                          .select("#title")
+                          .text(d.title);
+                        d3.select("#bookTooltip")
+                          .select("#author")
+                          .text(d.author);
+                        // d3.select("#bookTooltip")
+                        //   .select("#noFriends")
+                        //   .text(d["commonBooks"]);
+                        // d3.select("#bookTooltip")
+                        //   .select("#rating")
+                        //   .text(d["name"]);
+                        // d3.select("#bookTooltip")
+                        //   .select("#goodReads")
+                        //   .text(d["name"]);
+
+                        //Show the tooltip
+                        d3.select("#bookTooltip").classed("hidden", false);
+
+                      });
+
                     }
             });
 
