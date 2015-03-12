@@ -53,7 +53,7 @@ svgContainer.selectAll("circle")
             .attr("cx",function(d, i){return coordinateX(d["commonBooks"], i)})
             .attr("cy",function(d, i){return coordinateY(d["commonBooks"], i)})
             .attr("r", function(d) {return scale(d["totalBooks"])   })
-            .attr("id", function(d){ return d["id"] + d["name"];})
+            .attr("id", function(d){ return "friend"+d["id"];})
             .attr()
             .style("opacity","0")
             .attr("class", "friend")
@@ -162,45 +162,72 @@ function showBooks(data){
                 .attr("alt", function(d) {return d.title;})
                 .attr("title", function(d) {return d.title;})
                 .on("click", function(d, i) {
-                 var $this = $(this);
-       console.log("current:" + i);
-       console.log("last selected:" + lastSelected);
+                   var $this = $(this);
+			       //console.log("current:" + i);
+			       //console.log("last selected:" + lastSelected);
 
-       if (i===lastSelected) {
-            // already been clicked once, hide it
-            d3.select(this).style("background", "rgba(242, 241, 239, 0)")
-            d3.select("#bookTooltip").classed("hidden", true);
-          }else {
-            d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
-            lastSelected = i;
-            //Get this bar's x/y values, then augment for the tooltip  
-            // var yPosition = d3.select(this).clientY ;
-            // console.log(yPosition);
+			       if (i===lastSelected) {
+			            // already been clicked once, hide it
+			            d3.select(this).style("background", "rgba(242, 241, 239, 0)")
+			            d3.select("#bookTooltip").classed("hidden", true);
+		          }else {
+		            d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
+		            lastSelected = i;
+		            //Get this bar's x/y values, then augment for the tooltip  
+		            // var yPosition = d3.select(this).clientY ;
+		            // console.log(yPosition);
+		
+		            //Update the tooltip position and value
+		            d3.select("#bookTooltip")
+		              // .style("top", window.outerHeight - yPosition + "px")
+		              .select("#title")
+		              .text(d.title);
+		              d3.select("#bookTooltip")
+		              .select("#author")
+		              .text(d.author);
+		            d3.select("#bookTooltip")
+		              .select("#noFriends")
+		              .text(d.friendsWhoAlsoRead.length);
+		            d3.select("#bookTooltip")
+		              .select("#rating")
+		              .text(d.rating);
+		            d3.select("#bookTooltip")
+		              .select("#goodReads")
+		              .text(d.average_rating);
+		            d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
+		            //Show the tooltip
+		            d3.select("#bookTooltip").classed("hidden", false);
+		            lastSelected = i;
+		        }//end else
+		        
+		        showConstelation(d)
+				
+		      });
 
-            //Update the tooltip position and value
-            d3.select("#bookTooltip")
-              // .style("top", window.outerHeight - yPosition + "px")
-              .select("#title")
-              .text(d.title);
-              d3.select("#bookTooltip")
-              .select("#author")
-              .text(d.author);
-            d3.select("#bookTooltip")
-              .select("#noFriends")
-              .text(d.friendsWhoAlsoRead.length);
-            d3.select("#bookTooltip")
-              .select("#rating")
-              .text(d.rating);
-            d3.select("#bookTooltip")
-              .select("#goodReads")
-              .text(d.average_rating);
-            d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
-            //Show the tooltip
-            d3.select("#bookTooltip").classed("hidden", false);
-            lastSelected = i;
-        }//end else
-
-      });
-
+	   function showConstelation(book){
+	   	
+	   	   console.log("book to show ")
+		   console.log(book)
+		   console.log(book.friendsWhoAlsoRead)
+		   
+		   var friendStars = []
+		   
+		   book.friendsWhoAlsoRead.forEach(function(d){
+		   		
+		   		var idString = "#friend"+d.id
+		   		var friendStar = d3.select(idString)
+		   		
+		   		friendStars.push({
+			   		xValue: friendStar.attr("cx"), 
+			   		yValue: friendStar.attr("cy"), 
+			   		connected: false
+		   		})
+		   })
+		   
+		   console.log(friendStars)
+		   
+		   drawConstellation(friendStars, d3.select("#skylikeApp"))
+	   }
+    
 
 }//end show books

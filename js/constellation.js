@@ -21,6 +21,8 @@ function drawConstellation(stars, svg){
 	var currentPath = [];
 	//IT WORKS
 	//********* first pass: drawing the main connections
+	
+	console.log("DRAW CONSTELLATION")
 
 	stars.forEach(function(entries, index){
 		if(!entries.connected){
