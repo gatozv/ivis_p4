@@ -37,8 +37,6 @@ function GoodReadsDataTransformations () {
 				"commonBooks":compareBooks(dataset.books,a.books)
 			}
 		})
-		
-		
 	}
 	
 	var friendsEdgeData = function(){
