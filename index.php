@@ -39,7 +39,7 @@
 		
 		$_SESSION['access_token'] = $access_token;
 			echo '<script type="text/javascript">
-	           window.location = "test.html"
+	           window.location = "skylikes.html"
 	      </script>';
 	}
 ?>
