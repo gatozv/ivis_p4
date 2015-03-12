@@ -5,6 +5,7 @@
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="js/xsltTransform.js"></script>
+	<script type="text/javascript" src="lib/jLouvain.js"></script>
 </head>
 
 <body class="sunset">
@@ -15,6 +16,7 @@
 <p id="status">hello</p>
 
 <script src="js/goodreadsDataFetches.js"></script>
+<script src="js/goodreadsDataTransformations.js"></script>
 <script>
 
 var svgWidth = 600
@@ -56,10 +58,22 @@ goodreadsDataFetches.statusUpdate = function(percentage,state){
 
 goodreadsDataFetches.finished = function(data){
 	console.log("done")
-	addXMLDownload("allData", data)
-	var jsonData = parseXMLString(data,"./xslt/AllDataTrafo.xslt")
+	var jsonString = parseXMLString(data,"./xslt/AllDataTrafo.xslt")
+	var jsonData = jQuery.parseJSON( jsonString);
 	console.log(jsonData)
+	
 	document.getElementById("status").innerHTML = "done"
+	
+	goodreadsDataTransformations.setData(jsonData)
+	
+	var allFriends = goodreadsDataTransformations.allFriends()
+	console.log("allfriends")
+	console.log(allFriends)
+	/*
+	allFriends.forEach(function(d,i){
+		console.log("id "+ i +" commonwithme " + d.commonBooks + " community "+d.community+ " totalbooks "+d.totalBooks )
+	
+	})*/
 } 
 
 var isUsingTestingDataset = getParameterByName("testingData") == "1"
@@ -72,6 +86,13 @@ if(isUsingTestingDataset){
 	goodreadsDataFetches.start()
 }
 
+
+
+
+
+
+
+
 //http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -79,25 +100,6 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
-
-function addXMLDownload(filename, data){
-	window.URL = window.webkitURL || window.URL;
-
-		var contentType = 'application/xml';
-
-		var xmlFile = new Blob([data], {type: contentType});
-
-		var a = document.createElement('a');
-		a.download = filename+'.xml';
-		a.href = window.URL.createObjectURL(xmlFile);
-		a.textContent = 'Download '+filename+' XML';
-
-		a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
-		
-		document.body.appendChild(document.createElement('br'));
-		document.body.appendChild(a);
-}
-
 
 </script>
 

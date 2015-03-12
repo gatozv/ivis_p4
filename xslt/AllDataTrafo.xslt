@@ -32,7 +32,7 @@
 		<xsl:text>"books": [
 		</xsl:text>
 		<xsl:apply-templates select="../../../allBooks/books[@userId = $userId]/GoodreadsResponse/reviews/review" />
-		<xsl:text>]},</xsl:text>
+		<xsl:text>],</xsl:text>
 	</xsl:template>
 
 	<xsl:template match="user" mode="friend">
