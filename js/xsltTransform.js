@@ -29,3 +29,21 @@ function parseXML(xmlFile, xslFile) {
 		return xmlAsString;
 	}
 }
+
+function parseXMLString(xmlString, xslFile) {
+	xsl = loadXMLDoc(xslFile);
+	// code for IE
+	if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+	{
+		return "IE support not implemented yet... sorry, not sorry.";
+	}
+	// code for Chrome, Firefox, Opera, etc.
+	else if (document.implementation && document.implementation.createDocument)
+	{
+		xsltProcessor = new XSLTProcessor();
+		xsltProcessor.importStylesheet(xsl);
+		resultDocument = xsltProcessor.transformToFragment(xmlString, document);
+		var xmlAsString = new XMLSerializer().serializeToString( resultDocument );
+		return xmlAsString;
+	}
+}
