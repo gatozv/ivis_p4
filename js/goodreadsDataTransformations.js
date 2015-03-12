@@ -39,6 +39,36 @@ function GoodReadsDataTransformations () {
 		})
 	}
 	
+	this.myBooks = function(){
+		
+		var returnBooks = dataset["books"].map(function(myBook,i,a){
+			
+			var friendsWhoReadMyBook = allFriends.filter(function(friend){
+				var filteredBooks = friend.books.filter(function(book){
+					return book.title == myBook.title
+				})
+				return filteredBooks.length>0
+			})
+			
+			friendsWhoReadMyBook = friendsWhoReadMyBook.map(function(friend){
+				return {
+					"name":friend.name,
+					"id":friend.id
+				}
+			})
+			
+			
+			var myBookNew = myBook
+			
+			myBookNew["friendsWhoAlsoRead"] = friendsWhoReadMyBook
+			
+			return	myBookNew
+		})
+		
+		return returnBooks
+		
+	}
+	
 	var friendsEdgeData = function(){
 		
 		var edge_data = [];
@@ -56,7 +86,6 @@ function GoodReadsDataTransformations () {
 			  	if(commonBooks >0){
 				  	edge_data.push({"source":i,"target":j,"weight":Math.pow(commonBooks,3)/100})
 			  	}
-			  	
 		  	}
 		})
 		
@@ -116,14 +145,11 @@ function GoodReadsDataTransformations () {
 		}
 	    
 	    
-	    console.log(communityCount)
+	    //console.log(communityCount)
 	    
 	    friendsWithCommunities.map(function(d,i,a){
 		    d.community = communityMapping[d.community]
 	    })
-	    
-	    //console.log(friendsWithCommunities)
-	    
 		return friendsWithCommunities;
 	}
 }

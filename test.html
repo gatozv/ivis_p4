@@ -69,6 +69,15 @@ goodreadsDataFetches.finished = function(data){
 	var allFriends = goodreadsDataTransformations.allFriends()
 	console.log("allfriends")
 	console.log(allFriends)
+	
+	var myBooks = goodreadsDataTransformations.myBooks()
+	myBooks.sort(function(a,b) { 
+		return b.friendsWhoAlsoRead.length - a.friendsWhoAlsoRead.length
+	 } );
+	 
+	console.log("myBooksSorted")
+	console.log(myBooks)
+	
 	/*
 	allFriends.forEach(function(d,i){
 		console.log("id "+ i +" commonwithme " + d.commonBooks + " community "+d.community+ " totalbooks "+d.totalBooks )
