@@ -11,15 +11,11 @@ stars - array of stars inside the constellations. They should have the following
 All objects should have the "connected" set to FALSE!*/			
 
 function drawConstellation(stars, svg){
-	//stars[0].connected=true;
 	var thisStar = 0;
-	var firstPass = true;
 	var endPath = false;
 	var connections = [];
-	var loops = 0;
 	var paths = [];
 	var currentPath = [];
-	//IT WORKS
 	//********* first pass: drawing the main connections
 	var canvas = svg.append("g")
 					.attr("class","constellation");
