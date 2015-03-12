@@ -185,15 +185,15 @@ function showBooks(data){
               d3.select("#bookTooltip")
               .select("#author")
               .text(d.author);
-            // d3.select("#bookTooltip")
-            //   .select("#noFriends")
-            //   .text(d["commonBooks"]);
-            // d3.select("#bookTooltip")
-            //   .select("#rating")
-            //   .text(d["name"]);
-            // d3.select("#bookTooltip")
-            //   .select("#goodReads")
-            //   .text(d["name"]);
+            d3.select("#bookTooltip")
+              .select("#noFriends")
+              .text(d.friendsWhoAlsoRead.length);
+            d3.select("#bookTooltip")
+              .select("#rating")
+              .text(d.rating);
+            d3.select("#bookTooltip")
+              .select("#goodReads")
+              .text(d.average_rating);
             d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
             //Show the tooltip
             d3.select("#bookTooltip").classed("hidden", false);
