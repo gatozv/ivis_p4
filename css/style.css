@@ -16,6 +16,7 @@ html {
 body {
     font-family: Bariol, Roboto, Helvetica, sans-serif;
     font-size: 15px;
+    color:#FFFFFF;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -274,20 +275,22 @@ p{
 .login-container{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 13em;
+    margin-top: 5em;
     text-align: center;
 }
 
 .btn {
-  padding: 20px 40px;
+  padding: 20px 20px;
+  /*margin: 30px;*/
   border-color: #34495E;
   border-radius: 3px;
   text-transform: uppercase;
   /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-  font-size: 18px;
+  font-size: 16px;
   /*font-weight: 700;*/
   color: #fff;
   background-color: #AEA8D3;
+  text-decoration: none;
 
 }
 
@@ -301,14 +304,43 @@ a {
     background-color: #67809F;
 }
 
-#login-big {
+.login-big {
   text-align: center;
-  margin: 1em;
-  font-size: 3em;
-  }
-
-#login-small {
-  text-align: center;
-  margin: 2em;
+  margin-bottom: 1.5em;
   font-size: 2em;
   }
+
+.login-small {
+  text-align: center;
+  margin: 2em;
+  font-size: 1em;
+  }
+
+.loading-stars{
+    width: 420px;
+    height: 420px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.path {
+  stroke-dasharray: 1678, 1678;
+  /*stroke-dashoffset: 1678;*/
+  /*animation: dash 15s linear forwards infinite;*/
+  opacity: 0.4;
+}
+}
+
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
