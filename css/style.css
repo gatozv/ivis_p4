@@ -216,7 +216,7 @@ p{
     right: 0em;
     top: 0;
     height: 100%;
-    padding-right: 1em;
+    padding-right: 1.5em;
 }
 .containerOuter {
     overflow-y: scroll;
@@ -232,11 +232,12 @@ p{
 }
 .book {
     float: left;
-    margin: 0.3em 0;
+
 }
 .book img {
     width: 80px;
     height: 107px;
+    padding: 0.3em;
 }
 
 #bookTooltip, #tooltip{
@@ -247,7 +248,8 @@ p{
 }
 #bookTooltip{
     right: 8em;
-    background: rgba(242, 241, 239, 0.1);
+    background: rgba(242, 241, 239, 0.2);
+    width: 15%;
 }
 #tooltip section, img{
     float: left;
