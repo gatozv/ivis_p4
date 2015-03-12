@@ -24,22 +24,6 @@ radialGradient.append("stop")
               .style("stop-color","#F2F1EF")
               .style("stop-opacity",0)
 
-// var initFriends = allFriends;
-// var friends = [];
-
-
-// for (var i = 0; i <allFriends.length ; i++) {
-  
-//   var friend = {};
-//   friend["id"] = allFriends[i].id;
-//   friend["name"] = allFriends[i].name;
-//   friend["totalBooks"] = allFriends[i].totalBooks;
-//   friend["commonBooks"] = allFriends[i].commonBooks;
-//   friend["image"] = allFriends[i].image_url;
-//   friends.push(friend);
-// };
-
-
 //gets the maximum of any of the fields in friends
 function maxOfFriendsList(friendsList, attr){
   var max = 0;
