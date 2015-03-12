@@ -32,7 +32,7 @@ function parseXML(xmlFile, xslFile) {
 
 function parseXMLString(xmlString, xslFile) {
 	xsl = loadXMLDoc(xslFile);
-	console.log(xsl)
+	//console.log(xsl)
 	var parser = new DOMParser()
 	var doc = parser.parseFromString(xmlString, "text/xml");
 	// code for IE
@@ -46,7 +46,7 @@ function parseXMLString(xmlString, xslFile) {
 		xsltProcessor = new XSLTProcessor();
 		xsltProcessor.importStylesheet(xsl);
 		resultDocument = xsltProcessor.transformToFragment(doc, document);
-		console.log(resultDocument);
+		//console.log(resultDocument);
 		var xmlAsString = new XMLSerializer().serializeToString( resultDocument );
 		return xmlAsString;
 	}
