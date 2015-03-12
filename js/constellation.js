@@ -21,7 +21,8 @@ function drawConstellation(stars, svg){
 	var currentPath = [];
 	//IT WORKS
 	//********* first pass: drawing the main connections
-
+	var canvas = svg.append("g")
+					.attr("class","constellation");
 	stars.forEach(function(entries, index){
 		if(!entries.connected){
 			endPath = false;
@@ -37,7 +38,7 @@ function drawConstellation(stars, svg){
 					}
 					var intersection = findIntersection(series, connections);
 					if(!intersection){
-						d3.select(".container").select("svg")
+						canvas
 						.append("line")
 						.attr("x1", series.x1)
 					    .attr("y1", series.y1)
@@ -87,7 +88,7 @@ function drawConstellation(stars, svg){
 				}
 				var intersection2 = findIntersection(series2, connections);
 				if(!intersection2){
-					d3.select(".container").select("svg")
+					canvas
 					.append("line")
 					.attr("x1", series2.x1)
 				    .attr("y1", series2.y1)
@@ -111,7 +112,7 @@ function drawConstellation(stars, svg){
 							"x2": stars[currentIndexS2].xValue,
 							"y2": stars[currentIndexS2].yValue
 						}
-						d3.select(".container").select("svg")
+						canvas
 						.append("line")
 						.attr("x1", series2.x1)
 					    .attr("y1", series2.y1)
