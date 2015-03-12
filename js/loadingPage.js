@@ -22,7 +22,16 @@ goodreadsDataFetches.finished = function(data) {
     var allFriends = goodreadsDataTransformations.allFriends()
     console.log("allfriends");
     console.log(allFriends);
+   
     drawStars(allFriends);
+    
+    var myBooks = goodreadsDataTransformations.myBooks()
+    // myBooks.sort(function(a,b) { 
+    //     return b.friendsWhoAlsoRead.length - a.friendsWhoAlsoRead.length
+    //  } );
+    showBooks(myBooks);
+    console.log("myBooksSorted")
+    console.log(myBooks)
 }
 var isUsingTestingDataset = getParameterByName("testingData") == "1"
 if (isUsingTestingDataset) {

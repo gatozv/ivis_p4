@@ -105,6 +105,7 @@ svgContainer.append("circle")
             .attr("cy",yOrigin)
             .attr("r", 3)
             .style("fill", "red");
+
 //calculates the x coordinate basd
 function coordinateX(nBooks, i){
 
@@ -122,83 +123,84 @@ function coordinateY(nBooks, i){
 
   //return nBooks * 10 
 }
-
+}//end draw stars
 
 //tooltips 
 d3.select("#tooltip").on("click", function() {
                 //Hide the tooltip
                 d3.select("#tooltip").classed("hidden", true);  
                       
-                })
-            var lastSelected ;
-            d3.json("xslt/DiannasBooks.json",function(error,data){
-                 if (error) {  //If error is not null, something went wrong.
-                    console.log("error:" + error);  //Log the error.
-                    } else {      //If no error, the file loaded correctly. Yay!
-                      console.log(data);   //Log the data.
-                      //Include other code to execute after successful file load here
-                   
-                    data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
+                });
+//draw books
 
-                    var divContainer = d3.select(".containerInner");
-                    var myBooks = divContainer.selectAll(".book")
-                        .data(data);
-                    console.log("number of books: " + data.length);
-                    var container_height = 117 * data.length;
-                    $(".containerInner").css("height", container_height);
-                    var newBookLink = myBooks.enter()
-                        .append("div")
-                        .attr("class", "book")
 
-                        .append("a")
-                        .attr("href", "#");
-                    newBookLink.append("img")
-                        .attr("id", function(d, i){return "b" + i})
-                        .attr("src", function(d) {
-                                return d.image_url;})
-                        .attr("alt", function(d) {return d.title;})
-                        .attr("title", function(d) {return d.title;})
-                    .on("click", function(d, i) {
-                       var $this = $(this);
-                       console.log("current:" + i);
-                       console.log("last selected:" + lastSelected);
 
-                        if (i===lastSelected) {
-                            // already been clicked once, hide it
-                            d3.select(this).style("background", "rgba(242, 241, 239, 0)")
-                            d3.select("#bookTooltip").classed("hidden", true);
-                        }else {
-                            d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
-                            lastSelected = i;
-                            //Get this bar's x/y values, then augment for the tooltip  
-                            // var yPosition = d3.select(this).clientY ;
-                            // console.log(yPosition);
+var lastSelected ;
+function showBooks(data){
 
-                            //Update the tooltip position and value
-                            d3.select("#bookTooltip")
-                              // .style("top", window.outerHeight - yPosition + "px")
-                              .select("#title")
-                              .text(d.title);
-                            d3.select("#bookTooltip")
-                              .select("#author")
-                              .text(d.author);
-                            // d3.select("#bookTooltip")
-                            //   .select("#noFriends")
-                            //   .text(d["commonBooks"]);
-                            // d3.select("#bookTooltip")
-                            //   .select("#rating")
-                            //   .text(d["name"]);
-                            // d3.select("#bookTooltip")
-                            //   .select("#goodReads")
-                            //   .text(d["name"]);
-                            d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
-                            //Show the tooltip
-                            d3.select("#bookTooltip").classed("hidden", false);
-                            lastSelected = i;
-                        }//end else
+      //If no error, the file loaded correctly. Yay!
+      console.log(data);   //Log the data.
+      //Include other code to execute after successful file load here
 
-                      });
+      data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
 
-                    }
-            });
-}//end draw stars
+      var divContainer = d3.select(".containerInner");
+      var myBooks = divContainer.selectAll(".book")
+      .data(data);
+      console.log("number of books: " + data.length);
+      var container_height = 117 * data.length;
+      $(".containerInner").css("height", container_height);
+      var newBookLink = myBooks.enter()
+                                .append("div")
+                                .attr("class", "book")
+                                .append("a")
+                                .attr("href", "#");
+      newBookLink.append("img")
+                .attr("id", function(d, i){return "b" + i})
+                .attr("src", function(d) {
+                  return d.image_url;})
+                .attr("alt", function(d) {return d.title;})
+                .attr("title", function(d) {return d.title;})
+                .on("click", function(d, i) {
+                 var $this = $(this);
+       console.log("current:" + i);
+       console.log("last selected:" + lastSelected);
+
+       if (i===lastSelected) {
+            // already been clicked once, hide it
+            d3.select(this).style("background", "rgba(242, 241, 239, 0)")
+            d3.select("#bookTooltip").classed("hidden", true);
+          }else {
+            d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
+            lastSelected = i;
+            //Get this bar's x/y values, then augment for the tooltip  
+            // var yPosition = d3.select(this).clientY ;
+            // console.log(yPosition);
+
+            //Update the tooltip position and value
+            d3.select("#bookTooltip")
+              // .style("top", window.outerHeight - yPosition + "px")
+              .select("#title")
+              .text(d.title);
+              d3.select("#bookTooltip")
+              .select("#author")
+              .text(d.author);
+            // d3.select("#bookTooltip")
+            //   .select("#noFriends")
+            //   .text(d["commonBooks"]);
+            // d3.select("#bookTooltip")
+            //   .select("#rating")
+            //   .text(d["name"]);
+            // d3.select("#bookTooltip")
+            //   .select("#goodReads")
+            //   .text(d["name"]);
+            d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
+            //Show the tooltip
+            d3.select("#bookTooltip").classed("hidden", false);
+            lastSelected = i;
+        }//end else
+
+      });
+
+
+}//end show books
