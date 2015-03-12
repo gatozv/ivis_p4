@@ -41,9 +41,9 @@ var maxCommonBooks = maxOfFriendsList(friends, "commonBooks");
 var xOrigin = svgWidth/2;
 var yOrigin = svgHeight/2;
 
-var distanceFromMeMax = 500;
+var distanceFromMeMax = svgHeight/2-40;
 //creates a scale for the number of books
-var scale = d3.scale.linear().domain([0,600]).range([3,10]);
+var scale = d3.scale.linear().domain([0, maxOfFriendsList(friends, "totalBooks")]).range([3,12]);
 
 //plots the data
 svgContainer.selectAll("circle")
