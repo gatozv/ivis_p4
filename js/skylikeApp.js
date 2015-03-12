@@ -205,6 +205,8 @@ function showBooks(data){
 		      });
 
 	   function showConstelation(book){
+	   
+	   		d3.select(".constellation").remove()
 	   	
 	   	   console.log("book to show ")
 		   console.log(book)
@@ -226,7 +228,7 @@ function showBooks(data){
 		   
 		   console.log(friendStars)
 		   
-		   drawConstellation(friendStars, d3.select("#skylikeApp"))
+		   drawConstellation(friendStars, d3.select("#svgContainer"))
 	   }
     
 
