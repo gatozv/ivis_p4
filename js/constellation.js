@@ -20,6 +20,11 @@ function drawConstellation(stars, svg){
 
 	var canvas = svg.append("g")
 					.attr("class","constellation");
+	/*var canvas = d3.select("body").append("g")
+					.attr("class","constellation")
+    				.remove();*/
+    /*var canvas = d3.select(document.createElement("g"))
+    				.attr("class", "constellation");*/
 	stars.forEach(function(entries, index){
 		if(!entries.connected){
 			endPath = false;
@@ -37,6 +42,8 @@ function drawConstellation(stars, svg){
 					if(!intersection){
 						canvas
 						.append("line")
+						.transition()
+						.duration(500)
 						.attr("x1", series.x1)
 					    .attr("y1", series.y1)
 					    .attr("x2", series.x2)
@@ -87,6 +94,8 @@ function drawConstellation(stars, svg){
 				if(!intersection2){
 					canvas
 					.append("line")
+					.transition()
+						.duration(500)
 					.attr("x1", series2.x1)
 				    .attr("y1", series2.y1)
 				    .attr("x2", series2.x2)
@@ -111,6 +120,8 @@ function drawConstellation(stars, svg){
 						}
 						canvas
 						.append("line")
+						.transition()
+						.duration(500)
 						.attr("x1", series2.x1)
 					    .attr("y1", series2.y1)
 					    .attr("x2", series2.x2)
@@ -224,5 +235,5 @@ function drawConstellation(stars, svg){
 	    }
 	    return true;
 	}
-
+return canvas;
 }
