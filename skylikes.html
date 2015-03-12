@@ -16,7 +16,7 @@
         </head>
         <!-- include librearies -->
         <body>
-            <img id="logo" src="skylikes-logos.png"/>
+            <img id="logo" src="img/skylikes-logos.svg"/>
             <div id="gradient"></div>
             <svg></svg>
             <div id="tooltip" class="hidden">
@@ -112,7 +112,7 @@
                             // d3.select("#bookTooltip")
                             //   .select("#goodReads")
                             //   .text(d["name"]);
-                            d3.select(this).style("background", "rgba(242, 241, 239, 0.2)")
+                            d3.select(this).style("background", "rgba(242, 241, 239, 0.5)")
                             //Show the tooltip
                             d3.select("#bookTooltip").classed("hidden", false);
                             lastSelected = i;
