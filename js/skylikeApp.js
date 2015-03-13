@@ -155,8 +155,8 @@ function drawStars(friends){
               .style("opacity","0")
               .attr("class", "friend")
               .attr("fill", "url(#grad1)")
-              //.attr("stroke-width", "20")
-              //.attr("stroke", "rgba(0,0,0,0)")
+              .attr("stroke-width", "20")
+              .attr("stroke", "rgba(0,0,0,0)")
               .on("click", function(d, i) {
                 //console.log(d['closestFriends'])
                 //Get this bar's x/y values, then augment for the tooltip
