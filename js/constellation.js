@@ -18,7 +18,8 @@ function drawConstellation(stars, svg){
 	var currentPath = [];
 	var animationDuration = 1000;
 	//********* first pass: drawing the main connections
-
+	svg.selectAll(".friend")
+		.style("opacity","0.5");
 	var canvas = svg.append("g")
 					.attr("class","constellation");
 	/*var canvas = d3.select("body").append("g")
