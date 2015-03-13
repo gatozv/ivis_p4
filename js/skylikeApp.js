@@ -3,8 +3,7 @@ function drawStars(friends){
   //initialize variables
   var svgWidth = window.innerWidth;
   var svgHeight= window.innerHeight;
-  var svgContainer = d3.select("#skylikeApp") //create container
-                       .append("svg")
+  var svgContainer = d3.select("#svgContainer") 
                        .attr("width", svgWidth )
                        .attr("height",svgHeight)
                        .attr("id", "svgContainer");
