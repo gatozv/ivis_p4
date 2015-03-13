@@ -217,8 +217,10 @@ p{
 .friend {
     /*fill: #F2F1EF;*/
 }
-.cicleStar{
-  
+.ring {
+  fill: none;
+  stroke: #F2F1EF;
+  stroke-width: 3px;
 }
 #svgContainer {
     z-index: 6;

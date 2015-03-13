@@ -11,6 +11,7 @@ stars - array of stars inside the constellations. They should have the following
 All objects should have the "connected" set to FALSE!*/			
 
 function drawConstellation(stars, svg){
+	console.log(stars)
 	var thisStar = 0;
 	var endPath = false;
 	var connections = [];
@@ -18,7 +19,12 @@ function drawConstellation(stars, svg){
 	var currentPath = [];
 	var animationDuration = 1000;
 	//********* first pass: drawing the main connections
-
+	/*svg.selectAll(".friend")
+		.style("opacity","0.3");
+	stars.forEach(function(d){
+		svg.select(d.friendID)
+			.style("opacity","1");
+	});*/
 	var canvas = svg.append("g")
 					.attr("class","constellation");
 	/*var canvas = d3.select("body").append("g")
