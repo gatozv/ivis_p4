@@ -1,5 +1,8 @@
 
 function drawStars(friends){
+
+  
+
   //initialize variables
   var svgWidth = window.innerWidth;
   var svgHeight= window.innerHeight;
@@ -184,9 +187,43 @@ function drawStars(friends){
               .delay(function(d,i){
                 return i*100;
               })
-              .duration(1000)
+              .duration(500)
               .style("opacity","1");
 
+  //http://stackoverflow.com/questions/1224463/is-there-any-way-to-call-a-function-periodically-in-javascript
+  
+  var friendids = friends.map(function(d){
+  	return d.id;
+  })
+  
+    var scale2 = d3.scale.linear().domain([2, 10]).range([0.145,0.45]);
+
+  			  
+  var intervalID = setInterval(function(){
+  		friendids= d3.shuffle(friendids);
+  		var idString = "#friend"+friendids[0]
+        var friendStar = d3.select(idString)
+        var rr = friendStar.attr("r")
+        var ttt =         scale2(rr)
+        var fli =  svgContainer.append("use")
+	  			    .attr("xlink:href","#flickrShape")
+	  			    .attr("xlink:href","#flickrShape")
+	  			    .attr("transform","translate("+friendStar.attr("cx")+","
+	  			    						      +friendStar.attr("cy")+"),scale("+ttt+","+ttt+")")
+	  			    .attr("fill-opacity","0")
+	  	var delayRandom = 50 + Math.random()*1000
+	  	var duration = 200 + Math.random()*200		    		    
+	  			    
+	  	fli.transition().delay(delayRandom)
+	  					.duration(duration).ease("ease-in-out").attr("fill-opacity","1")
+	    fli.transition().delay(delayRandom +duration)
+	                    .duration(duration).ease("ease-in-out").attr("fill-opacity","0").remove() 
+  		
+  		//console.log("blink "+ttt+ " "+rr)
+  		
+  }, 300);
+  
+  
   
 }//end draw stars
 

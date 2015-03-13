@@ -1,5 +1,7 @@
 function GoodReadsDataTransformations () {
 
+	
+
 	var compareBooks = function(booklist1, booklist2){
 		var commonBooks = 0	
 		booklist1.forEach(function(book1){
