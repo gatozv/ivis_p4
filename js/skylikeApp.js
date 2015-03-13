@@ -74,7 +74,7 @@ svgContainer.selectAll("circle")
               .text(d["name"]);
             d3.select("#tooltip")
               .select("#avatar")
-              .attr("src", d["image"]);
+              .attr("src", d["image_url"]);
             d3.select("#tooltip")
               .select("#total")
               .text(d["totalBooks"]);
