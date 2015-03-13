@@ -29,13 +29,35 @@ function GoodReadsDataTransformations () {
 		//console.log(communities)
 	
 		return dataset["friends"].map(function(a,i){
+			
+			var maxcb = 0
+			
+			var friendsButNotMe = dataset["friends"].filter(function(x){
+			   return x!=a
+		   	})
+		
+		   	var closestFriends = friendsButNotMe.map(function(b,j){
+		   		var cb = compareBooks(b.books,a.books)
+		   		maxcb = maxcb > cb? maxcb : cb;
+		   		return {
+			   		"id":b.id,
+			   		"name":b.name,
+			   		"commonBooks": cb
+		   		} 
+		   	})
+		   	
+		   	closestFriends = closestFriends.filter(function(x){
+			   return x.commonBooks != 0 && x.commonBooks==maxcb
+		   	})
+		
 			return {
 				"id":a.id,
 				"name":a.name,
 				"image_url":a.image_url,
 				"totalBooks":a.books.length,
 				"community" : communities[i].community,
-				"commonBooks":compareBooks(dataset.books,a.books)
+				"commonBooks":compareBooks(dataset.books,a.books),
+				"closestFriends":closestFriends
 			}
 		})
 	}
