@@ -61,15 +61,15 @@ svgContainer.selectAll("circle")
             .on("click", function(d, i) {
 
             //Get this bar's x/y values, then augment for the tooltip
-            var xPosition = d3.select(this).attr("x") ;
+            var xPosition = coordinateX(d["commonBooks"], i) ;
             console.log(coordinateX(d["commonBooks"], i));
             console.log(coordinateY(d["commonBooks"], i));
-            var yPosition = parseFloat(d3.select(this).attr("y")) ;
+            var yPosition = coordinateY(d["commonBooks"], i) ;
 
             //Update the tooltip position and value
             d3.select("#tooltip")
-              .style("left", coordinateX(d["commonBooks"], i) + "px")
-              .style("top", coordinateY(d["commonBooks"], i) + "px")
+              .style("left", xPosition + "px")
+              .style("top", yPosition + "px")
               .select("#name")
               .text(d["name"]);
             d3.select("#tooltip")
