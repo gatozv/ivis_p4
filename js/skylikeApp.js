@@ -1,7 +1,5 @@
-
+var starCoordinatesDict = {};
 function drawStars(friends){
-
-  
 
   //initialize variables
   var svgWidth = window.innerWidth;
@@ -136,6 +134,13 @@ function drawStars(friends){
     return coordinates;
   }
   
+  friends.forEach(function(d){
+  		starCoordinatesDict[d.id] = {
+	  		"x" : starCoordinates(d).x,
+	  		"y" : starCoordinates(d).y,
+	  		"r" :scale(d["totalBooks"])
+  		}
+  })
     
   //plots the data
   svgContainer.selectAll("circle")
@@ -150,10 +155,10 @@ function drawStars(friends){
               .style("opacity","0")
               .attr("class", "friend")
               .attr("fill", "url(#grad1)")
-              .attr("stroke-width", "20")
-              .attr("stroke", "rgba(0,0,0,0)")
+              //.attr("stroke-width", "20")
+              //.attr("stroke", "rgba(0,0,0,0)")
               .on("click", function(d, i) {
-                console.log(d['closestFriends'])
+                //console.log(d['closestFriends'])
                 //Get this bar's x/y values, then augment for the tooltip
                 var xPosition = starCoordinates(d).x ;
                 var yPosition = starCoordinates(d).y ;
@@ -206,7 +211,7 @@ function drawStars(friends){
               })
               .duration(500)
               .style("opacity","1");
-
+			  
   //http://stackoverflow.com/questions/1224463/is-there-any-way-to-call-a-function-periodically-in-javascript
   
   var friendids = friends.map(function(d){
@@ -217,16 +222,21 @@ function drawStars(friends){
 
   			  
   var intervalID = setInterval(function(){
+  
+  
+  
   		friendids= d3.shuffle(friendids);
-  		var idString = "#friend"+friendids[0]
-        var friendStar = d3.select(idString)
-        var rr = friendStar.attr("r")
+  		
+  		var f = starCoordinatesDict[friendids[0]]
+        
+        
+        var rr = f.r
         var ttt =         scale2(rr)
         var fli =  svgContainer.append("use")
 	  			    .attr("xlink:href","#flickrShape")
 	  			    .attr("xlink:href","#flickrShape")
-	  			    .attr("transform","translate("+friendStar.attr("cx")+","
-	  			    						      +friendStar.attr("cy")+"),scale("+ttt+","+ttt+")")
+	  			    .attr("transform","translate("+f.x+","
+	  			    						      +f.y+"),scale("+ttt+","+ttt+")")
 	  			    .attr("fill-opacity","0")
 	  	var delayRandom = 50 + Math.random()*1000
 	  	var duration = 200 + Math.random()*200		    		    
@@ -239,8 +249,6 @@ function drawStars(friends){
   		//console.log("blink "+ttt+ " "+rr)
   		
   }, 300);
-  
-  
   
 }//end draw stars
 
@@ -327,7 +335,7 @@ function showBooks(data){
        
        var friendStars = []
        book.friendsWhoAlsoRead.forEach(function(d){
-          
+          /*
           var idString = "#friend"+d.id
           var friendStar = d3.select(idString)
           
@@ -336,8 +344,17 @@ function showBooks(data){
             yValue: friendStar.attr("cy"), 
             rValue: friendStar.attr("r"), 
             connected: false
+          })*/
+          
+          friendStars.push({
+            xValue: starCoordinatesDict[d.id].x, 
+            yValue: starCoordinatesDict[d.id].y, 
+            rValue: starCoordinatesDict[d.id].r, 
+            connected: false
           })
+          
        })
+
        
        console.log(friendStars)
        if (friendStars.length ===1){
