@@ -147,17 +147,19 @@ function drawStars(friends){
               .style("opacity","0")
               .attr("class", "friend")
               .attr("fill", "url(#grad1)")
+              .attr("stroke-width", "20")
+              .attr("stroke", "rgba(0,0,0,0)")
               .on("click", function(d, i) {
                 //Get this bar's x/y values, then augment for the tooltip
-                var xPosition = d3.select(this).attr("x") ;
-                //console.log(coordinateX(d["commonBooks"], i));
-                //console.log(coordinateY(d["commonBooks"], i));
-                var yPosition = parseFloat(d3.select(this).attr("y")) ;
-
+                var xPosition = starCoordinates(d).x ;
+                var yPosition = starCoordinates(d).y ;
+              
+                if(yPosition>svgHeight-150)
+                  {yPosition= yPosition-150 }
                 //Update the tooltip position and value
                 d3.select("#tooltip")
-                  .style("left", starCoordinates(d).x + "px")
-                  .style("top", starCoordinates(d).y + "px")
+                  .style("left", xPosition + "px")
+                  .style("top", yPosition + "px")
                   .select("#name")
                   .text(d["name"]);
                 d3.select("#tooltip")
@@ -234,10 +236,6 @@ function showBooks(data){
           }else {
                   d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
                   lastSelected = i;
-                  //Get this bar's x/y values, then augment for the tooltip  
-                  // var yPosition = d3.select(this).clientY ;
-                  // console.log(yPosition);
-      
                   //Update the tooltip position and value
                   d3.select("#bookTooltip")
                     // .style("top", window.outerHeight - yPosition + "px")
