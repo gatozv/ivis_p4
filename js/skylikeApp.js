@@ -3,7 +3,8 @@ function drawStars(friends){
   //initialize variables
   var svgWidth = window.innerWidth;
   var svgHeight= window.innerHeight;
-  var svgContainer = d3.select("#svgContainer") 
+  var svgContainer = d3.select("#skylikeApp") //create container
+                       .append("svg")
                        .attr("width", svgWidth )
                        .attr("height",svgHeight)
                        .attr("id", "svgContainer");
@@ -199,13 +200,10 @@ d3.select("#tooltip").on("click", function() {
 //draw books
 var lastSelected ;
 function showBooks(data){
-
       //If no error, the file loaded correctly. Yay!
       console.log(data);   //Log the data.
       //Include other code to execute after successful file load here
-
       // data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
-
       var divContainer = d3.select(".containerInner");
       var myBooks = divContainer.selectAll(".book")
       .data(data);
@@ -232,6 +230,7 @@ function showBooks(data){
                   // already been clicked once, hide it
                   d3.select(this).style("background", "rgba(242, 241, 239, 0)")
                   d3.select("#bookTooltip").classed("hidden", true);
+                  d3.select(".constellation").remove()
           }else {
                   d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
                   lastSelected = i;
@@ -256,9 +255,10 @@ function showBooks(data){
                   //Show the tooltip
                   d3.select("#bookTooltip").classed("hidden", false);
                   lastSelected = i;
+                  showConstelation(d)
               }//end else
             
-          showConstelation(d)
+          
         
           });
 
@@ -266,12 +266,11 @@ function showBooks(data){
      
          d3.select(".constellation").remove()
       
-         console.log("book to show ")
+      console.log("book to show ")
        console.log(book)
        console.log(book.friendsWhoAlsoRead)
        
        var friendStars = []
-       
        book.friendsWhoAlsoRead.forEach(function(d){
           
           var idString = "#friend"+d.id
@@ -280,13 +279,24 @@ function showBooks(data){
           friendStars.push({
             xValue: friendStar.attr("cx"), 
             yValue: friendStar.attr("cy"), 
+            rValue: friendStar.attr("r"), 
             connected: false
           })
        })
        
        console.log(friendStars)
-       
+       if (friendStars.length ===1){
+       //do something
+      d3.select(".ring").remove();
+        d3.select("#svgContainer").append("circle")
+              .attr("cx", friendStars[0].xValue)
+              .attr("cy", friendStars[0].yValue)
+              .attr("r", parseFloat(friendStars[0].rValue)+6)
+              .attr("class", "ring")
+       }else{
+  d3.select(".ring").remove();
        drawConstellation(friendStars, d3.select("#svgContainer"))
+     }
      }
     
 
