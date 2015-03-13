@@ -205,7 +205,7 @@ function showBooks(data){
       console.log(data);   //Log the data.
       //Include other code to execute after successful file load here
 
-      data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
+      // data.sort(function(a, b){return d3.descending(a.date_added, b.date_added);}); 
 
       var divContainer = d3.select(".containerInner");
       var myBooks = divContainer.selectAll(".book")

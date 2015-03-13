@@ -16,6 +16,7 @@ function drawConstellation(stars, svg){
 	var connections = [];
 	var paths = [];
 	var currentPath = [];
+	var animationDuration = 1000;
 	//********* first pass: drawing the main connections
 
 	var canvas = svg.append("g")
@@ -42,13 +43,13 @@ function drawConstellation(stars, svg){
 					if(!intersection){
 						canvas
 						.append("line")
-						.transition()
-						.duration(500)
 						.attr("x1", series.x1)
 					    .attr("y1", series.y1)
 					    .attr("x2", series.x2)
 					    .attr("y2", series.y2)
-					    .attr("stroke","white");
+					    .attr("stroke","white")
+					    .attr("class", "constLine")
+					    .style("opacity",0);
 					    stars[thisStar].connected=true;
 					    connections.push(series);
 					    currentPath.push(thisStar);
@@ -94,13 +95,13 @@ function drawConstellation(stars, svg){
 				if(!intersection2){
 					canvas
 					.append("line")
-					.transition()
-						.duration(500)
 					.attr("x1", series2.x1)
 				    .attr("y1", series2.y1)
 				    .attr("x2", series2.x2)
 				    .attr("y2", series2.y2)
-				    .attr("stroke","white");
+				    .attr("class", "constLine")
+				    .attr("stroke","white")
+				    .style("opacity","0");
 				    
 				    connections.push(series2);
 				    paths[0]=paths[0].concat(paths[1]);
@@ -120,13 +121,13 @@ function drawConstellation(stars, svg){
 						}
 						canvas
 						.append("line")
-						.transition()
-						.duration(500)
 						.attr("x1", series2.x1)
 					    .attr("y1", series2.y1)
 					    .attr("x2", series2.x2)
 					    .attr("y2", series2.y2)
-					    .attr("stroke","white");
+					    .attr("class", "constLine")
+					    .attr("stroke","white")
+					    .style("opacity","0");
 					    connections.push(series2);
 					    paths[0]=paths[0].concat(paths[1]);
 					    paths.splice(1,1)
@@ -135,13 +136,17 @@ function drawConstellation(stars, svg){
 			}
 		}while(paths.length>1);
 	}
-
+	var bla = canvas.selectAll(".constLine");
+	bla
+	.transition()
+	.duration(animationDuration)
+	.style("opacity", "1");
 	//************* end of second pass
 
-	var lineFunction = d3.svg.line()
+	/*var lineFunction = d3.svg.line()
                     .x(function(d) { return d.xValue; })
                     .y(function(d) { return d.yValue; })
-			        .interpolate("linear");
+			        .interpolate("linear");*/
 
 	function findDistances (minorArray, majorArray){
 		var distances = [];
@@ -235,5 +240,5 @@ function drawConstellation(stars, svg){
 	    }
 	    return true;
 	}
-return canvas;
+//return canvas;
 }

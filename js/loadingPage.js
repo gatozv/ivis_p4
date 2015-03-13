@@ -26,9 +26,9 @@ goodreadsDataFetches.finished = function(data) {
     drawStars(allFriends);
     
     var myBooks = goodreadsDataTransformations.myBooks()
-    // myBooks.sort(function(a,b) { 
-    //     return b.friendsWhoAlsoRead.length - a.friendsWhoAlsoRead.length
-    //  } );
+    myBooks.sort(function(a,b) { 
+        return b.friendsWhoAlsoRead.length - a.friendsWhoAlsoRead.length
+     } );
     showBooks(myBooks);
     console.log("myBooksSorted")
     console.log(myBooks)
