@@ -2,8 +2,8 @@
 goodreadsDataFetches.statusUpdate = function(percentage, state) {
     console.log("percentage " + percentage + " state " + state)
     var newwidht = 1678-(percentage/100*1678);
-	d3.select(".path").transition().duration(1000).style("stroke-dashoffset", newwidht)		
-	document.getElementById("status").innerHTML = "Creating the big bang. " +percentage +"% of the universe ready"
+	d3.select(".path").transition().duration(1500).delay(50).style("stroke-dashoffset", newwidht)		
+	document.getElementById("status").innerHTML = "Initializing the big bang. " +percentage +"% of the universe ready"
     if(state=="done"){
         console.log("i'm here");
 

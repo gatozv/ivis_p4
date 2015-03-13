@@ -2,9 +2,9 @@
   <div class="container">
   </div>
   
-<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <!-- <script src="d3.min.js" charset="utf-8"></script> -->
-<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.5.0"></script>
+<!-- <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.5.0"></script> -->
 <script type="text/javascript" src="js/constellation.js"></script>
 <script type="text/javascript">
 	var w = 1000,
@@ -62,9 +62,10 @@ mySvg.selectAll("circle")
 	 .attr("r", 3)
 	 .attr("fill", "white");
 
-
-drawConstellation(myStars, mySvg);
-
+var myCanvas = drawConstellation(myStars, mySvg);
+//console.log(myCanvas)
+//mySvg = document.body.getElementsByTagName('svg');
+//mySvg[0].appendChild(myCanvas.node());
 
 
 </script>
