@@ -27,11 +27,11 @@ function drawStars(friends){
                 .style("stop-opacity",0)
                 
   //plots myself (red dot)
-  svgContainer.append("circle")
+ /* svgContainer.append("circle")
               .attr("cx",xOrigin)
               .attr("cy",yOrigin)
               .attr("r", 3)
-              .style("fill", "red");
+              .style("fill", "red");*/
 
   //gets the maximum of any of the fields in friends
   function maxOfFriendsList(friendsList, attr){
