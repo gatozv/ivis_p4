@@ -12,7 +12,8 @@ function drawStars(friends){
                        .attr("id", "svgContainer");
   //console.log(importFriends());
   //create the blurry lines
-  var radialGradient = svgContainer.append("defs").append("radialGradient")
+  var radialGradient = svgContainer.select("defs")
+  							.append("radialGradient")
                             .attr("id","grad1")
                             .attr("cx","50%")
                             .attr("cy","50%")
