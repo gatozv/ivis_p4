@@ -331,16 +331,18 @@ function showBooks(data){
               .attr("r", 0)
               
               .attr("class", "ring");
-          var grow = d3.selectAll(".ring")
+          d3.selectAll(".ring")
             .transition()
             .duration(3000)
             .attr("r", parseFloat(friendStars[0].rValue)+15)
             .style("opacity","0");
-          var shrink = d3.selectAll(".ring")
-            .transition()
-            .duration(3000)
-            .attr("r", 0)
-            .style("opacity","1");
+          /*function shrink(){  
+            d3.selectAll(".ring")
+              .transition()
+              .duration(3000)
+              .attr("r", 0)
+              .style("opacity","1");
+          }*/
        }else{
           d3.select(".ring").remove();
              drawConstellation(friendStars, d3.select("#svgContainer"))
