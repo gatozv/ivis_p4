@@ -94,6 +94,37 @@ function GoodReadsDataFetches () {
 		}, 13300);
 		
 	}
+	
+	
+	this.startWithTestingDataFast = function(){
+		self.statusUpdate(0, "loadingMe")
+		setTimeout(function(){
+			self.statusUpdate(0, "loadingFriends")
+		}, 100);
+		
+		setTimeout(function(){
+			self.statusUpdate(0, "loadingBookLists")
+		}, 1500);
+		setTimeout(function(){
+			self.statusUpdate(100, "loadingBookLists")
+		}, 2200);
+		
+		setTimeout(function(){
+			self.statusUpdate(100, "done");
+			$.ajax('xslt/allDataDiana2.xml', {
+			  dataType: 'text',
+		      success: function(data) {
+		        // console.log("success")
+		         self.finished(data)
+		      },
+		      error: function(data, errorThrown) {
+		        // console.log("failure"+errorThrown)
+		      }
+		   });
+			
+		}, 3700);
+		
+	}
 }
 
 var goodreadsDataFetches = new GoodReadsDataFetches ();

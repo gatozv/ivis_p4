@@ -36,7 +36,7 @@ goodreadsDataFetches.finished = function(data) {
 var isUsingTestingDataset = getParameterByName("testingData") == "1"
 if (isUsingTestingDataset) {
     console.log("startWithTestingData")
-    goodreadsDataFetches.startWithTestingData()
+    goodreadsDataFetches.startWithTestingDataFast()
 } else {
     console.log("start realData!")
     goodreadsDataFetches.start()
