@@ -152,6 +152,7 @@ function drawStars(friends){
               .attr("stroke-width", "20")
               .attr("stroke", "rgba(0,0,0,0)")
               .on("click", function(d, i) {
+                console.log(d['closestFriends'])
                 //Get this bar's x/y values, then augment for the tooltip
                 var xPosition = starCoordinates(d).x ;
                 var yPosition = starCoordinates(d).y ;
@@ -175,10 +176,25 @@ function drawStars(friends){
                   .text(d["commonBooks"]);
                 d3.select("#tooltip")
                   .select("#closeFriend")
-                  .text(d["name"]);
+                  .text(d["closestFriends"][0].name);
     
                 //Show the tooltip
                 d3.select("#tooltip").classed("hidden", false);
+                var closestFLine = {
+                  "x1":xPosition,
+                  "y1":yPosition,
+                  "x2":d3.select("#friend"+d["closestFriends"][0].id).attr("cx"),
+                  "y2":d3.select("#friend"+d["closestFriends"][0].id).attr("cy")
+                };
+                svgContainer.selectAll(".closeFLine").remove();
+                svgContainer
+                .append("line")
+                .attr("x1", closestFLine.x1)
+                  .attr("y1", closestFLine.y1)
+                  .attr("x2", closestFLine.x2)
+                  .attr("y2", closestFLine.y2)
+                  .attr("class", "closeFLine")
+                  .attr("stroke","yellow");
             });
   //show the circles one at a time 
   var circles = svgContainer.selectAll("circle");
@@ -230,6 +246,7 @@ function drawStars(friends){
 //tooltips 
 d3.select("#tooltip").on("click", function() {
                 //Hide the tooltip
+                d3.selectAll(".closeFLine").remove();
                 d3.select("#tooltip").classed("hidden", true);  
                       
                 });
@@ -334,7 +351,7 @@ function showBooks(data){
           d3.selectAll(".ring")
             .transition()
             .duration(3000)
-            .attr("r", parseFloat(friendStars[0].rValue)+15)
+            .attr("r", (parseFloat(friendStars[0].rValue)+15)*2)
             .style("opacity","0");
           /*function shrink(){  
             d3.selectAll(".ring")
