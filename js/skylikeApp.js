@@ -3,8 +3,7 @@ function drawStars(friends){
   //initialize variables
   var svgWidth = window.innerWidth;
   var svgHeight= window.innerHeight;
-  var svgContainer = d3.select("#skylikeApp") //create container
-                       .append("svg")
+  var svgContainer = d3.select("#svgContainer")
                        .attr("width", svgWidth )
                        .attr("height",svgHeight)
                        .attr("id", "svgContainer");
@@ -198,7 +197,7 @@ d3.select("#tooltip").on("click", function() {
                       
                 });
 //draw books
-var lastSelected ;
+var lastSelected=-1 ;
 function showBooks(data){
       //If no error, the file loaded correctly. Yay!
       console.log(data);   //Log the data.
@@ -230,7 +229,8 @@ function showBooks(data){
                   // already been clicked once, hide it
                   d3.select(this).style("background", "rgba(242, 241, 239, 0)")
                   d3.select("#bookTooltip").classed("hidden", true);
-                  d3.select(".constellation").remove()
+                  d3.select(".constellation").remove();
+                  lastSelected = -1;
           }else {
                   d3.select("#b" + lastSelected).style("background", "rgba(242, 241, 239, 0)")
                   lastSelected = i;
@@ -287,16 +287,27 @@ function showBooks(data){
        console.log(friendStars)
        if (friendStars.length ===1){
        //do something
-      d3.select(".ring").remove();
-        d3.select("#svgContainer").append("circle")
+          d3.selectAll(".ring").remove();
+          d3.select("#svgContainer").append("circle")
               .attr("cx", friendStars[0].xValue)
               .attr("cy", friendStars[0].yValue)
-              .attr("r", parseFloat(friendStars[0].rValue)+6)
-              .attr("class", "ring")
+              .attr("r", 0)
+              
+              .attr("class", "ring");
+          var grow = d3.selectAll(".ring")
+            .transition()
+            .duration(3000)
+            .attr("r", parseFloat(friendStars[0].rValue)+15)
+            .style("opacity","0");
+          var shrink = d3.selectAll(".ring")
+            .transition()
+            .duration(3000)
+            .attr("r", 0)
+            .style("opacity","1");
        }else{
-  d3.select(".ring").remove();
-       drawConstellation(friendStars, d3.select("#svgContainer"))
-     }
+          d3.select(".ring").remove();
+             drawConstellation(friendStars, d3.select("#svgContainer"))
+       }
      }
     
 
