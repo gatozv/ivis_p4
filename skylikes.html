@@ -62,38 +62,36 @@
             <div id="gradient"></div>
 			
 			<svg id="svgContainer" width="10" height="10">
-			 <defs>
-		      <radialGradient id="gradX" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-		            	<stop offset="80%" style="stop-color: #000000;"></stop>
-		            	<stop offset="100%" style="stop-color: #FFFFFF; "></stop>
-		        </radialGradient>
-		       
-		        <radialGradient id="gradZ" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-		            	<stop offset="10%" style="stop-color: #FFFFFF;"></stop>
-		            	<stop offset="100%" style="stop-color: #000000; "></stop>
-		        </radialGradient>
-		            
-		        <mask id="maskOOO" >
-				  <!--  <circle id="bla1" class="bubu" cx="-50" cy="-50" r="50" fill="url(#gradX)"></circle>
-					<circle id="bla2" class="bubu" cx="50"  cy="50"  r="50" fill="url(#gradX)"></circle>
-					<circle id="bla3" class="bubu" cx="-50" cy="50"  r="50" fill="url(#gradX)"></circle>
-					<circle id="bla4" class="bubu" cx="50"  cy="-50" r="50" fill="url(#gradX)"></circle>-->
-					<path d="M 0 -50 q 5 45 50 50 q -45 5 -50 50 q -5 -45 -50 -50 q 45 -5 50 -50 z" 
-							fill="white" />
-				</mask>
-			    	
-				<mask id="maskFlicker">
-					<g style="mask: url(#mask000); ">
-						<path d="M 0 -50 q 5 45 50 50 q -45 5 -50 50 q -5 -45 -50 -50 q 45 -5 50 -50 z" 
-							 fill="url(#gradZ)"/>
-				    	<!--<circle cx="0"  cy="0" r="55" fill="url(#gradZ)" ></circle>-->
-				    </g>
-				</mask>
-					
-				<g id="flickrShape" style="mask: url(#maskFlicker);" >
-		    		<circle cx="0"  cy="0" r="100" fill="white" ></circle>
-				</g>
-		     </defs>
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="80%" style="stop-color: #000000;"></stop>
+                        <stop offset="100%" style="stop-color: #FFFFFF; "></stop>
+                    </radialGradient>
+                    
+                    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="10%" style="stop-color: #FFFFFF;"></stop>
+                        <stop offset="100%" style="stop-color: #000000; "></stop>
+                    </radialGradient>
+                    
+                    <mask id="mask1" >
+                        <circle cx="-50" cy="-50" r="50" fill="url(#grad1)"></circle>
+                        <circle cx="50"  cy="50"  r="50" fill="url(#grad1)"></circle>
+                        <circle cx="-50" cy="50"  r="50" fill="url(#grad1)"></circle>
+                        <circle cx="50"  cy="-50" r="50" fill="url(#grad1)"></circle>
+                        <path d="M 0 -50 q 5 45 50 50 q -45 5 -50 50 q -5 -45 -50 -50 q 45 -5 50 -50 z"
+                        fill="white" />
+                    </mask>
+                    
+                    <mask id="maskFlicker">
+                        <g style="mask: url(#mask1); ">
+                            <circle cx="0"  cy="0" r="55" fill="url(#grad2)" ></circle>
+                        </g>
+                    </mask>
+                    
+                    <g id="flickrShape" style="mask: url(#maskFlicker);" >
+                        <circle cx="0"  cy="0" r="100" fill="white" ></circle>
+                    </g>
+                </defs>
 			</svg>
 			
             <!-- tooltips -->

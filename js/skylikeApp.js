@@ -192,7 +192,7 @@ function drawStars(friends){
                   "x2":d3.select("#friend"+d["closestFriends"][0].id).attr("cx"),
                   "y2":d3.select("#friend"+d["closestFriends"][0].id).attr("cy")
                 };
-                svgContainer.selectAll(".closeFLine").remove();
+               /* svgContainer.selectAll(".closeFLine").remove();
                 svgContainer
                 .append("line")
                 .attr("x1", closestFLine.x1)
@@ -200,7 +200,20 @@ function drawStars(friends){
                   .attr("x2", closestFLine.x2)
                   .attr("y2", closestFLine.y2)
                   .attr("class", "closeFLine")
-                  .attr("stroke","yellow");
+                  .attr("stroke","yellow");*/
+                  
+                  
+                  d3.selectAll(".ring").remove();
+		          d3.select("#svgContainer").append("circle")
+		              .attr("cx", xPosition)
+		              .attr("cy", yPosition)
+		              .attr("r", 0)
+		              .attr("class", "ring");
+		          d3.selectAll(".ring")
+		            .transition()
+		            .duration(3000)
+		            .attr("r", (parseFloat(scale(d["totalBooks"]))+15)*2)
+		            .style("opacity","0");
             });
   //show the circles one at a time 
   var circles = svgContainer.selectAll("circle");
