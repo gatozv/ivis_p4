@@ -157,7 +157,7 @@ function fetchDone(paFetchedObject, paResult){
 	
 	doneFetches.push(paFetchedObject)
 	
-	//console.log(paFetchedObject)
+	console.log(paFetchedObject)
 	
 	//console.log("fetch done "+ paFetchedObject.type)
 	
