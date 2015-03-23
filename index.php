@@ -38,8 +38,14 @@
 		$access_token = $obj->getAccessToken($_REQUEST['oauth_verifier']);
 		
 		$_SESSION['access_token'] = $access_token;
-			echo '<script type="text/javascript">
+		echo 'access token\n';
+		print_r($access_token)
+		echo 'sessoin variables\n';
+		print_r($_SESSION['access_token'])
+
+
+		/*	echo '<script type="text/javascript">
 	           window.location = "skylikes.html"
-	      </script>';
+	      </script>';*/
 	}
 ?>
