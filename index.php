@@ -41,7 +41,7 @@
 		
 
 		$cookie_name_token = "access_token";
-		setcookie($cookie_name_token, $access_token, time() + (86400 * 30), "/");
+		setcookie($cookie_name_token, "blabla", time() + (86400 * 30), "/");
 
 		$cookie_name2 = "user";
 		$cookie_value = "Alex Porter";
