@@ -24,7 +24,7 @@
 	}
 
 	if($_GET['authorize'] == 1){
-		echo "<a href='test.html'>Go forward</a>";
+		echo "<a href='skylikes.html'>Go forward</a>";
 
 		if($_SESSION['oauth_token'] !== $_REQUEST['oauth_token']){
 		  die('token expired get a new one');
