@@ -42,15 +42,17 @@
 
 		$cookie_name_token = "oauth_token";
 		setcookie($cookie_name_token, $access_token['oauth_token'], time() + (86400 * 30), "/");
+		$cookie_name_secret = "oauth_token_secret";
+		setcookie($cookie_name_secret, $access_token['oauth_token_secret'], time() + (86400 * 30), "/");
 
 		$cookie_name2 = "user";
 		$cookie_value = "Alex Porter";
 		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 
 		echo "access token\n";
-		print_r($access_token);
-		echo "sessoin variables\n";
-		print_r($_SESSION['access_token']);
+		print_r($access_token['oauth_token']);
+		echo "secret \n";
+		print_r($access_token['oauth_token_secret']);
 
 
 		if(!isset($_COOKIE[$cookie_name_token])) {
