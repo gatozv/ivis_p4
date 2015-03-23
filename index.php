@@ -43,6 +43,7 @@
 		echo "sessoin variables\n";
 		print_r($_SESSION['access_token']);
 
+		setcookie("access_tokens", $access_token);
 
 		/*	echo '<script type="text/javascript">
 	           window.location = "skylikes.html"
