@@ -40,8 +40,8 @@
 		$_SESSION['access_token'] = $access_token;
 		
 
-		$cookie_name_token = "access_token";
-		setcookie($cookie_name_token, "blabla", time() + (86400 * 30), "/");
+		$cookie_name_token = "oauth_token";
+		setcookie($cookie_name_token, $access_token['oauth_token'], time() + (86400 * 30), "/");
 
 		$cookie_name2 = "user";
 		$cookie_value = "Alex Porter";
