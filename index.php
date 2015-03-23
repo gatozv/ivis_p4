@@ -24,7 +24,7 @@
 	}
 
 	if($_GET['authorize'] == 1){
-		echo "<a href='skylikes.html'>Go forward</a>";
+		
 
 		if($_SESSION['oauth_token'] !== $_REQUEST['oauth_token']){
 		  die('token expired get a new one');
@@ -57,7 +57,7 @@
 		    echo "Cookie '" . $cookie_name_token . "' is set!<br>";
 		    echo "Value is: " . $_COOKIE[$cookie_name_token];
 		}
-		
+		echo "<a href='skylikes.html'>Go forward</a>";
 		/*	echo '<script type="text/javascript">
 	           window.location = "skylikes.html"
 	      </script>';*/
