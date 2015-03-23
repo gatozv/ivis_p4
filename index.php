@@ -43,18 +43,19 @@
 		echo "sessoin variables\n";
 		print_r($_SESSION['access_token']);
 
-		setcookie("access_tokens", $access_token);
+		$cookie_name_token = "access_token";
+		setcookie($cookie_name_token, $access_token, time() + (86400 * 30), "/");
 
-		$cookie_name = "user";
+		$cookie_name2 = "user";
 		$cookie_value = "Alex Porter";
 		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 
 
-		if(!isset($_COOKIE[$cookie_name])) {
-		    echo "Cookie named '" . $cookie_name . "' is not set!";
+		if(!isset($_COOKIE[$cookie_name_token])) {
+		    echo "Cookie named '" . $cookie_name_token . "' is not set!";
 		} else {
-		    echo "Cookie '" . $cookie_name . "' is set!<br>";
-		    echo "Value is: " . $_COOKIE[$cookie_name];
+		    echo "Cookie '" . $cookie_name_token . "' is set!<br>";
+		    echo "Value is: " . $_COOKIE[$cookie_name_token];
 		}
 		
 		/*	echo '<script type="text/javascript">
