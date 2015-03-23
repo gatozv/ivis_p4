@@ -9,9 +9,6 @@ $obj = new GoodreadsApi(iSAfjzMo6QHWifwOfCQvQ, XRCIVEsXshWdT2NwKGqHoQ6e8qzC1YclV
 
 	$content = $obj->doGet('http://www.goodreads.com/api/auth_user');
 
-	$tok = $_COOKIE['oauth_token'];
-	$tok2 = $_COOKIE['oauth_token_secret'];
-	echo "<!-- access token: $tok sec $tok2 -->";
 	print_r($content);
 	unset ($obj);
 

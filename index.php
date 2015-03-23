@@ -62,8 +62,8 @@
 		    echo "Value is: " . $_COOKIE[$cookie_name_token];
 		}
 		echo "<a href='skylikes.html'>Go forward</a>";
-		/*	echo '<script type="text/javascript">
+			echo '<script type="text/javascript">
 	           window.location = "skylikes.html"
-	      </script>';*/
+	      </script>';
 	}
 ?>
