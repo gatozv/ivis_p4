@@ -96,9 +96,9 @@
                     <h3 class="section-subheading text-muted">Visualize your Goodreads account with Skylike</h3>
                 
                     <div class="row">
-                    <a href="#services" class="page-scroll btn btn-xl">Log in with Goodreads</a>
+                    <a id="loginButton" class="page-scroll btn btn-xl">Log in with Goodreads</a>
                     </div>
-                    <h3><a>Or try with an exsample profile</a></h3>
+                    <h3><a href='skylikes.html?testingData=1'>Or try with an exsample profile</a></h3>
                 </div>
     </section>
 
@@ -212,7 +212,7 @@
                         <img src="img/andres.png" class="img-responsive img-circle" alt="">
                         <h4>Andres Sierra Sierra</h4>
                         <ul class="list-inline social-buttons">
-                            <li><a href="mailto:andres@example.com"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:andres@skylike.com"><i class="fa fa-envelope"></i></a>
                             </li>
                             
                         </ul>
@@ -223,7 +223,7 @@
                         <img src="img/johanna.png" class="img-responsive img-circle" alt="">
                         <h4>Johanna Mähönen</h4>
                         <ul class="list-inline social-buttons">
-                            <li><a href="mailto:johannna@example.com"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:johannna@skylike.com"><i class="fa fa-envelope"></i></a>
                             </li>
                             <li><a href="se.linkedin.com/pub/johanna-mähönen/62/a67/335/en"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -235,7 +235,7 @@
                         <img src="img/willie.png" class="img-responsive img-circle" alt="">
                         <h4>Willfried Bock</h4>
                         <ul class="list-inline social-buttons">
-                            <li><a href="mailto:willie@example.com"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:willie@skylike.com"><i class="fa fa-envelope"></i></a>
                             </li>
                             <li><a href="se.linkedin.com/in/wilfriedbock/en"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -280,13 +280,16 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
                     <span class="copyright">Copyright &copy; Skylike 2015</span>
-                </div>
                 
             </div>
         </div>
     </footer>
+
+    <script>
+        var a = document.getElementById('loginButton');
+        a.href = loginLink;
+    </script>
 
 
     <!-- jQuery -->
@@ -300,9 +303,6 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>

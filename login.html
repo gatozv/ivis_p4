@@ -1,31 +1,312 @@
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-		<script id="linkscript">
-			//this link will get replaced by actual login link by php script
-			var loginLink = #;
-		</script>
-		
-	</head>
+<head>
 
-    <body class="sunset">
-    <img id="logo" src="img/Skylikes-logos.svg"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <div class="login-container">
-    	<p style="color:#FFFFFF; font-size: 20px; text-decoration: none; text-align:center;">Skylike - A universe of your books and friends.</p>
-	    <h2 class="login-big">Get started by logging in with your <br>Goodreads account</h2> 
+    <title>Skylike</title>
 
-	    <a id="loginButton" class="btn" href='#'>Log In with goodreads</a>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	    <h4 class="login-small"> <a href='skylikes.html?testingData=1'>Or try on Diana's profile </a></h4>
-   </div> <!-- Logins-->
+    <!-- Custom CSS -->
+    <link href="css/home.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#page-top"><img class="page-scroll" src="img/logo-horizontal.svg" style="height:50px;" href="#page-top"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#get-started">Get Started</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">How it Works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#background-text">Background</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+       <div class="container">
+       
+        <!-- Actual Player -->
+        <div class="video-player ">
+            
+            <div class='embed-container'><iframe src='https://player.vimeo.com/video/123218080' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+            
+        </div>     
+    </div>
+    </header>
+
+    <!-- Get started -->
+    <section id="get-started">
+        <div class="container">
+            <div class="row text-center" style="margin-top:40px; marging-bottom: 40px;">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Get started!</h2>
+                    <h3 class="section-subheading text-muted">Visualize your Goodreads account with Skylike</h3>
+                
+                    <div class="row">
+                    <a id="loginButton" class="page-scroll btn btn-xl">Log in with Goodreads</a>
+                    </div>
+                    <h3><a href='skylikes.html?testingData=1'>Or try with an exsample profile</a></h3>
+                </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row explanation">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How Skylike Works</h2>
+                    <h3 class="section-subheading text-muted">Discover your social network as the night sky</h3>
+                </div>
+            </div>
+            <div class="row explanation">
+                <div class="col-md-6">
+                        <img style="width:500px;" src="img/Skylike-willie-small.png" alt="friends as stars" class=""/>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Your friends as the stars in the sky</h4>
+                    <p class="text-muted">Skylike visualizes information from your Goodreads account and enables you to look at your friends as the stars in the night sky.The size of the star represents the number of books your friend has read. The closer your friend is to the center, the more common books you have with your friend. You can also discover matches between your friends.</p>
+                </div>
+            </div>
+            <div class="row explanation">
+                <div class="col-md-6" style="float:right;">
+                    <img style="width:500px;" src="img/Skylike-book-detail.png" alt="book detail" class=""/>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Browse through your books</h4>
+                    <p class="text-muted">All the books from your account are shown in the right scroll bar. They are ordered by popularity within your network: you will find the books that have been read among many of your friends at the top, while the books that only you have read are at the bottom. </p>
+                </div>
+
+            </div>
+
+            <div class="row explanation">
+                <div class="col-md-6">
+                        <img style="width:500px;" src="img/Skylike-constellation.png" alt="Constellations" class=""/>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Discover your constellations</h4>
+                    <p class="text-muted">When selecting a book by clicking it, all friends who have read that book will be connected by the lines of a constellation on your sky. The sky and the constellations are unique to each user varying in their size and shape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="background-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Background</h2>
+                    <h3 class="section-subheading text-muted">Skylike. A universal approach to visualizing social media.</h3>
+                </div>
+            <div class="col-lg-10 col-md-10 col-sm-10  col-xs-10 col-xs-offset-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 description">
+                <p class="text-muted">Skylike is a web application that uses data from Goodreads API and visualizes it as a night sky full of stars. In the application you can browse the books of your account and detect connections between your friends and the books that they have read as constellations.</p>
+
+                <p class="text-muted">Social media is an integral part of our everyday lives. As the amount of content on social networks grows rapidly over time, there is very little possibility for the individual to explore this information in a meaningful way. In order to facilitate such a task, some social networks provide built-in information visualization tools that allow their users to get an overview of their own and their friend’s content, but these are few and far in-between.</p>
+
+                <p class="text-muted">The field of semiotics studies the metaphor as a powerful rhetoric function, which helps people understand the world around them by using familiar structures. One of the most familiar sights for the human eye is the night sky and its stars. Most of us are able to recognize Orion and he's belt on the winter night sky, or notice a bright triangle on the summer sky. We have always had the tendencies to give meaning to the shapes that formed in our imagination by connecting the stars of the sky.</p>
+
+                <p class="text-muted">Skylike is based on the idea of visualizing social networks content as the familiar structure of the night sky. We have put our user into the center of the universe, much like how ancient explorers saw Earth as the center of the world. The stars in the sky represent our user's connections/friends in the context of the social network. The stars are connected by common likes or interests. </p>
+
+                <p class="text-muted">In this instance of Skylike, we have chosen Goodreads to be our universe. Goodreads is a social network that helps its users keep track of the books they have read or that they want to read and keep in touch with their friends' interest and reads. Our users are Goodreads' books enthusiasts, and our goal is to help them find connections between themselves and their friends: to explore the common books they have read, and the dynamics of their networks.</p>
+
+                <p class="text-muted">We aim at providing a magical experience to our universe explorers. We help them keep an overview of their friends in the form of stars in the sky. They can explore their books and find out which ones are more popular in their networks, as constellations appear to highlight their friends who have read the same books. </p>
+
+                               
+            </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Team Skylike</h2>
+                    <h3 class="section-subheading text-muted">The five people who came up with the idea and made it happen during Spring 2015.</h3>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-lg-offset-1">
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/diana.png" class="img-responsive img-circle" alt="">
+                        <h4>Diana Lipcanu</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:diana@skylike.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/tomas.png" class="img-responsive img-circle" alt="">
+                        <h4>Tomas Gatial</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:tomas@skylike.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/andres.png" class="img-responsive img-circle" alt="">
+                        <h4>Andres Sierra Sierra</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:andres@skylike.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/johanna.png" class="img-responsive img-circle" alt="">
+                        <h4>Johanna Mähönen</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:johannna@skylike.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="se.linkedin.com/pub/johanna-mähönen/62/a67/335/en"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/willie.png" class="img-responsive img-circle" alt="">
+                        <h4>Willfried Bock</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:willie@skylike.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="se.linkedin.com/in/wilfriedbock/en"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">This team was formed during the Information Visualization course from KTH, Stockholm, Sweden under the supervision of <a href="se.linkedin.com/in/marioromero/en">Mario Romero</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container text-center">
+         <p class="large text-muted">Data retrieved from Goodreads API</p>  
+            <div class="col-lg-2 col-lg-offset-5">
+
+                    <a href="www.goodreads.com">
+                        <img src="img/goodreads-logo.png" class="img-responsive img-centered" alt="">
+                    </a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">If you want to know more about our project, don't hesitate to:</h3>
+                    <a href="mailto:contact@skylike.me" target="_new" class="btn btn-xl">Send us an E-mail</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <span class="copyright">Copyright &copy; Skylike 2015</span>
+                
+            </div>
+        </div>
+    </footer>
+
     <script>
-		var a = document.getElementById('loginButton');
-		a.href = loginLink;
-	</script>
-    
-    </body>
+        var a = document.getElementById('loginButton');
+        a.href = loginLink;
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
 </html>
