@@ -23,14 +23,19 @@ body {
 }
 
 p {
-    font-size: 25px;
+    font-size: 15px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 15px;
 }
-
+@media(min-width:768px) {
+    p {
+        font-size: 25px;
+        line-height: 1.75;
+    }
+}
 a,
 a:hover,
 a:focus,
@@ -87,7 +92,7 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #d69292; /*dark pink*/;
     color: #fff;
     background-color: rgba(214, 184, 189, 1); /*pink*/
 }
@@ -139,7 +144,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #d69292; /*dark pink*/;
     color: #fff;
     background-color: rgba(214, 184, 189, 1); /*pink*/
 }
@@ -270,7 +275,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    /*background-image: url(../img/header-bg.jpg);*/
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
