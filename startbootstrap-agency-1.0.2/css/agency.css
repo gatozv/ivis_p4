@@ -287,7 +287,7 @@ header .intro-text .intro-heading {
     margin: 3em 0;
 }
 .description {} section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -329,11 +329,14 @@ section h3.section-subheading {
     margin-top: 0;
 }
 aside.clients img {
-    margin: 50px auto;
+    margin: 10px auto 25px;
+}
+aside.clients{
+    margin-top: 25px;
 }
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../../img/darksky.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
