@@ -1,4 +1,4 @@
-f/*!
+/*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -65,7 +65,7 @@ font-family: "Bariol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*blue*/
 
 text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: rgba(58, 83, 155, 1);
@@ -103,9 +103,9 @@ background-color: #fff;
 
 border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     background-color: rgba(58, 83, 155, 1);
     /*blue*/
@@ -298,9 +298,9 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 25px;
     text-transform: none;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 400;
 }
 @media(min-width: 768px) {
