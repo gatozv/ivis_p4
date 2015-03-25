@@ -22,7 +22,7 @@ body {
 }
 p {
     font-size: 15px;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 p.large {
     font-size: 15px;
@@ -30,7 +30,7 @@ p.large {
 @media(min-width: 768px) {
     p {
         font-size: 25px;
-        line-height: 1.75;
+        line-height: 1.5;
    }
 }
 a, a:hover, a:focus, a:active, a.active {
@@ -173,8 +173,9 @@ background-color: rgba(58, 83, 155, 1);
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
     outline: 0;
-    color: rgba(58, 83, 155, 1);
-    /*blue*/
+    color: rgba(214, 184, 189, 1);
+    /*pink*/
+
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
@@ -419,8 +420,9 @@ ul.social-buttons li a {
     transition: all .3s;
 }
 ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-    background-color: rgba(58, 83, 155, 1);
-    /*blue*/
+    background-color: rgba(214, 184, 189, 1);
+    /*pink*/
+
 }
 .btn:focus, .btn:active, .btn.active, .btn:active:focus {
     outline: 0;
