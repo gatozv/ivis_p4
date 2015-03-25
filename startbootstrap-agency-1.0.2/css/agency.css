@@ -23,7 +23,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 25px;
     line-height: 1.75;
 }
 
@@ -327,6 +327,10 @@ header .intro-text .intro-heading {
 
 .explanation{
     margin: 3em 0;
+}
+
+.description{
+
 }
 
 section {
