@@ -1,4 +1,4 @@
-/*!
+f/*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -406,7 +406,7 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 ul.social-buttons {
-    margin-bottom: 0;
+    margin: 10px;
 }
 ul.social-buttons li a {
     display: block;
