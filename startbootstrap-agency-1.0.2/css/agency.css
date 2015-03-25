@@ -12,7 +12,7 @@
 }
 body {
     overflow-x: hidden;
-    font-family: "Bariol", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
     color: #777;
@@ -29,7 +29,7 @@ p.large {
 }
 @media(min-width: 768px) {
     p {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 1.5;
    }
 }
@@ -166,7 +166,7 @@ background-color: rgba(58, 83, 155, 1);
 }
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Bariol', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -310,7 +310,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 0 0 15px 0;
     text-transform: none;
-    font-size: 25px;
+    font-size: 30px;
 }
 .team-member {
     margin-bottom: 50px;
