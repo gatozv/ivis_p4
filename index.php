@@ -24,7 +24,7 @@
 	}
 
 	if($_GET['authorize'] == 1){
-		echo "<a href='test.html'>Go forward</a>";
+		
 
 		if($_SESSION['oauth_token'] !== $_REQUEST['oauth_token']){
 		  die('token expired get a new one');
@@ -38,6 +38,30 @@
 		$access_token = $obj->getAccessToken($_REQUEST['oauth_verifier']);
 		
 		$_SESSION['access_token'] = $access_token;
+		
+
+		$cookie_name_token = "oauth_token";
+		setcookie($cookie_name_token, $access_token['oauth_token'], time() + (86400 * 30), "/");
+		$cookie_name_secret = "oauth_token_secret";
+		setcookie($cookie_name_secret, $access_token['oauth_token_secret'], time() + (86400 * 30), "/");
+
+		$cookie_name2 = "user";
+		$cookie_value = "Alex Porter";
+		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+		echo "access token\n";
+		print_r($access_token['oauth_token']);
+		echo "secret \n";
+		print_r($access_token['oauth_token_secret']);
+
+
+		if(!isset($_COOKIE[$cookie_name_token])) {
+		    echo "Cookie named '" . $cookie_name_token . "' is not set!";
+		} else {
+		    echo "Cookie '" . $cookie_name_token . "' is set!<br>";
+		    echo "Value is: " . $_COOKIE[$cookie_name_token];
+		}
+		echo "<a href='skylikes.html'>Go forward</a>";
 			echo '<script type="text/javascript">
 	           window.location = "skylikes.html"
 	      </script>';
